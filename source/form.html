@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <h1 class="sute__title visually-hidden">Sedona</h1>
+    <h1 class="sute__title visually-hidden">Sedona Feedback page</h1>
     <div class="container">
       <header>
         <a class="header-logo site-logo" href="index.html">
@@ -32,11 +32,60 @@
         </nav>
       </header>
       <main>
-
-        <!-- FORM PAGE -->
-
+        <section class="hero inner-hero">
+          <h2 class="hero__title visually-hidden">SEDONA Feedback Hero</h2>
+          <img src="#" alt="Sedona slogan" class="hero__img hero__img--just-name">
+          <img src="#" alt="Sedona decoration" class="hero__img hero__img--decor">
+        </section>
+        <section class="form">
+          <h2 class="form__title top-section__title">Оставьте свой отзыв</h2>
+          <span class="form__sub-title top-section__sub-title">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</span>
+          <form action="#">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Представьтесь:</legend>
+              <label for="first-name" class="form__label">Имя*:</label>
+              <input type="text" placeholder="Петр" id="first-name" class="form__input--text">
+              <label for="last-name" class="form__label">Фамилия*:</label>
+              <input type="text" placeholder="Иванов" id="last-name" class="form__input--text">
+              <label for="fathers-name" class="form__label">Отчество:</label>
+              <input type="text" placeholder="Александрович" id="fathers-name" class="form__input--text">
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Контактная информация:</legend>
+              <label for="last-name" class="form__label">Контактный телефон*:</label>
+              <input type="text" placeholder="Иванов" id="last-name" class="form__input--phone">
+              <label for="fathers-name" class="form__label">Электронная почта*:</label>
+              <input type="text" placeholder="Александрович" id="fathers-name" class="form__input--mail">
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Ваше Общее впечатление:</legend>
+              <input type="radio" name="impression" value="good" id="impression-good" class="form__input--radio" selected>
+              <label for="impression-good">Скорее положительное</label>
+              <input type="radio" name="impression" value="bad" id="impression-bad" class="form__input--radio">
+              <label for="impression-good">Скорее отрицательное</label>
+              <input type="radio" name="impression" value="none" id="impression-none" class="form__input--radio">
+              <label for="impression-good">Затрудняюсь ответить</label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Посещенные достопримечательности:</legend>
+              <input type="checkbox" name="visited-bridge" id="visited-bridge" class="form__input--chk" selected>
+              <label for="visited-bridge">Мост Дьявола</label>
+              <input type="checkbox" name="visited-mount" id="visited-mount" class="form__input--chk">
+              <label for="visited-mount">Гора-Колокол</label>
+              <input type="checkbox" name="visited-park" id="visited-park" class="form__input--chk">
+              <label for="visited-park">Слайд-парк</label>
+              <input type="checkbox" name="visited-rock" id="visited-rock" class="form__input--chk">
+              <label for="visited-rock">Красные скалы</label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Опишите свои эмоции:</legend>
+              <textarea name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги" class="form__input--txt"></textarea>
+            </fieldset>
+            <input type="submit" value="Отправить отзыв">
+          </form>
+        </section>
       </main>
-      <footer class="footer main-footer">
+      <footer class="footer inner-footer">
         <span class="footer__hashtag">#VISITSEDONA</span>
         <ul class="footer__list social">
           <li class="social__item social__item--tw">
