@@ -10,52 +10,63 @@
   <body>
     <h1 class="sute__title visually-hidden">Sedona Feedback page</h1>
     <div class="container">
-      <header>
-        <a class="header-logo site-logo" href="index.html">
+      <header class="header">
+        <a class="site-logo" href="index.html">
           <img src="#" alt="Sedona Logo" class="site-logo__image">
         </a>
         <nav class="main-nav">
-          <ul class="main-nav__list site-nav">
-            <a href="index.html" class="site-nav__link">
-              <li class="site-nav__item">Главная</li>
-            </a>
-            <a href="photo.html" class="site-nav__link">
-              <li class="site-nav__item">Фото и видео</li>
-            </a>
-            <a href="form.html" class="site-nav__link">
-              <li class="site-nav__item">Форма отзыва</li>
-            </a>
-            <a href="#" class="site-nav__link">
-              <li class="site-nav__item">HTML Academy</li>
-            </a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html" class="main-nav__link">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">HTML Academy</a>
+            </li>
           </ul>
         </nav>
       </header>
-      <main>
-        <section class="hero inner-hero">
+      <main class="main">
+        <section class="hero">
           <h2 class="hero__title visually-hidden">SEDONA Feedback Hero</h2>
-          <img src="#" alt="Sedona slogan" class="hero__img hero__img--just-name">
-          <img src="#" alt="Sedona decoration" class="hero__img hero__img--decor">
+          <img src="#" alt="Sedona slogan" class="hero__img hero__img-just-name">
         </section>
         <section class="form">
-          <h2 class="form__title title">Оставьте свой отзыв</h2>
-          <span class="form__sub-title sub-title">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</span>
+          <div class="promo">
+            <h2 class="promo__title">Оставьте свой отзыв</h2>
+            <span class="promo__sub-title">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</span>
+          </div>
           <form action="#">
             <fieldset class="form__fieldset">
               <legend class="form__legend">Представьтесь:</legend>
-              <label for="first-name" class="form__label">Имя*:</label>
-              <input type="text" placeholder="Петр" id="first-name" class="form__input--text">
-              <label for="last-name" class="form__label">Фамилия*:</label>
-              <input type="text" placeholder="Иванов" id="last-name" class="form__input--text">
-              <label for="fathers-name" class="form__label">Отчество:</label>
-              <input type="text" placeholder="Александрович" id="fathers-name" class="form__input--text">
+              <div class="form__input-wrap">
+                <label for="first-name" class="form__label">Имя*:</label>
+                <input type="text" placeholder="Петр" id="first-name" class="form__input--text">
+              </div>
+              <div class="form__input-wrap">
+                <label for="last-name" class="form__label">Фамилия*:</label>
+                <input type="text" placeholder="Иванов" id="last-name" class="form__input--text">
+              </div>
+              <div class="form__input-wrap">
+                <label for="fathers-name" class="form__label">Отчество:</label>
+                <input type="text" placeholder="Александрович" id="fathers-name" class="form__input--text">
+              </div>
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__legend">Контактная информация:</legend>
-              <label for="last-name" class="form__label">Контактный телефон*:</label>
-              <input type="text" placeholder="Иванов" id="last-name" class="form__input--phone">
-              <label for="fathers-name" class="form__label">Электронная почта*:</label>
-              <input type="text" placeholder="Александрович" id="fathers-name" class="form__input--mail">
+              <div class="form__input-wrap">
+                <label for="last-name" class="form__label">Контактный телефон*:</label>
+                <input type="text" placeholder="Иванов" id="last-name" class="form__input--phone">
+              </div>
+              <div class="form__input-wrap">
+                <label for="fathers-name" class="form__label">Электронная почта*:</label>
+                <input type="text" placeholder="Александрович" id="fathers-name" class="form__input--mail">
+              </div>
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__legend">Ваше Общее впечатление:</legend>
@@ -85,7 +96,7 @@
           </form>
         </section>
       </main>
-      <footer class="footer inner-footer">
+      <footer class="footer">
         <span class="footer__hashtag">#VISITSEDONA</span>
         <ul class="footer__list social">
           <li class="social__item social__item--tw">
