@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона / Форма</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize-8.0.0.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="sute__title visually-hidden">Sedona Feedback page</h1>
+    <div class="container">
+      <header class="header">
+        <a class="site-logo" href="index.html">
+          <img src="#" alt="Sedona Logo" class="site-logo__image">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html" class="main-nav__link">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <h2 class="hero__title visually-hidden">SEDONA Feedback Hero</h2>
+          <img src="#" alt="Sedona slogan" class="hero__img hero__img-just-name">
+        </section>
+        <section class="form">
+          <div class="promo">
+            <h2 class="promo__title">Оставьте свой отзыв</h2>
+            <span class="promo__sub-title">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</span>
+          </div>
+          <form action="#">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Представьтесь:</legend>
+              <div class="form__input-wrap">
+                <label for="first-name" class="form__label">Имя*:</label>
+                <input type="text" placeholder="Петр" id="first-name" class="form__input--text">
+              </div>
+              <div class="form__input-wrap">
+                <label for="last-name" class="form__label">Фамилия*:</label>
+                <input type="text" placeholder="Иванов" id="last-name" class="form__input--text">
+              </div>
+              <div class="form__input-wrap">
+                <label for="fathers-name" class="form__label">Отчество:</label>
+                <input type="text" placeholder="Александрович" id="fathers-name" class="form__input--text">
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Контактная информация:</legend>
+              <div class="form__input-wrap">
+                <label for="last-name" class="form__label">Контактный телефон*:</label>
+                <input type="text" placeholder="Иванов" id="last-name" class="form__input--phone">
+              </div>
+              <div class="form__input-wrap">
+                <label for="fathers-name" class="form__label">Электронная почта*:</label>
+                <input type="text" placeholder="Александрович" id="fathers-name" class="form__input--mail">
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Ваше Общее впечатление:</legend>
+              <input type="radio" name="impression" value="good" id="impression-good" class="form__input--radio" selected>
+              <label for="impression-good">Скорее положительное</label>
+              <input type="radio" name="impression" value="bad" id="impression-bad" class="form__input--radio">
+              <label for="impression-good">Скорее отрицательное</label>
+              <input type="radio" name="impression" value="none" id="impression-none" class="form__input--radio">
+              <label for="impression-good">Затрудняюсь ответить</label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Посещенные достопримечательности:</legend>
+              <input type="checkbox" name="visited-bridge" id="visited-bridge" class="form__input--chk" selected>
+              <label for="visited-bridge">Мост Дьявола</label>
+              <input type="checkbox" name="visited-mount" id="visited-mount" class="form__input--chk" selected>
+              <label for="visited-mount">Гора-Колокол</label>
+              <input type="checkbox" name="visited-park" id="visited-park" class="form__input--chk" selected>
+              <label for="visited-park">Слайд-парк</label>
+              <input type="checkbox" name="visited-rock" id="visited-rock" class="form__input--chk">
+              <label for="visited-rock">Красные скалы</label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Опишите свои эмоции:</legend>
+              <textarea name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги" class="form__input--txt"></textarea>
+            </fieldset>
+            <input type="submit" value="Отправить отзыв">
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <span class="footer__hashtag">#VISITSEDONA</span>
+        <ul class="footer__list social">
+          <li class="social__item social__item--tw">
+            <span class="visually-hidden">Седона в Twitter</span>
+          </li>
+          <li class="social__item social__item--fb">
+            <span class="visually-hidden">Седона в Facebook</span>
+          </li>
+          <li class="social__item social__item--ytb">
+            <span class="visually-hidden">Седона в Youtube</span>
+          </li>
+        </ul>
+        <span class="footer__copy">
+          Сделано
+          <img src="#" alt="HTML Academy" class="footer__img">
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
