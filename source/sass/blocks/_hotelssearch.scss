@@ -1,0 +1,21 @@
+.hotels-search {
+  padding-top: 30px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.hotels-search__text {
+  padding: 0 20px;
+  &--bold {
+    @include bold();
+  }
+}
+
+.hotel-search__link {
+  display: block;
+  width: 280px;
+  padding: 16px 0;
+  margin: 30px auto 50px auto;
+  @include bold();
+  @include bg-blue-col-white();
+}

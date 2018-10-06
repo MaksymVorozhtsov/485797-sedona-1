@@ -4,8 +4,6 @@
 }
 
 .reasons__large {
-  background-color: $blue;
-  color: $white;
   @include flex();
 }
 
@@ -15,8 +13,10 @@
 
 .reasons__item {
   padding: 25px 35px;
+  background-color: #eee;
   &--blue {
     padding: 35px 25px;
+    @include bg-blue-col-white();
   }
 }
 

@@ -14,3 +14,14 @@ $white: #fff;
   display: flex;
   justify-content: center;
 }
+
+@mixin bold() {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+@mixin bg-blue-col-white() {
+  background-color: $blue;
+  color: $white;
+}

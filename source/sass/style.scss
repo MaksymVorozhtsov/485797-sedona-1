@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .visually-hidden {
 	position: absolute;
 	clip: rect(1px 1px 1px 1px);
@@ -34,3 +38,6 @@ a {
 @import 'blocks/promo';
 @import 'blocks/reasons';
 @import 'blocks/features';
+@import 'blocks/hotelssearch';
+@import 'blocks/footer';
+@import 'blocks/social';
