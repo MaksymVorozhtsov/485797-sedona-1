@@ -1,0 +1,16 @@
+$blue: #81b3d2;
+$white: #fff;
+
+@mixin flex() {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+}

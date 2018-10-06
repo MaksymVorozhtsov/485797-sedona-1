@@ -1,0 +1,26 @@
+.reasons {
+  background-color: $white;
+  text-align: center;
+}
+
+.reasons__large {
+  background-color: $blue;
+  color: $white;
+  @include flex();
+}
+
+.reasons__items {
+  @include flex();
+}
+
+.reasons__item {
+  padding: 25px 35px;
+  &--blue {
+    padding: 35px 25px;
+  }
+}
+
+.reasons__item-img {
+  width: 100%;
+  height: auto;
+}

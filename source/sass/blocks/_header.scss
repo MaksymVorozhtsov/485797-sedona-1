@@ -1,0 +1,15 @@
+.header {
+  height: 55px;
+  background-color: $white;
+}
+
+.main-nav {
+  display: none;
+}
+
+.site-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
