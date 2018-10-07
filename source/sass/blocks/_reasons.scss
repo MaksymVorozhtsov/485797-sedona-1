@@ -9,14 +9,73 @@
 
 .reasons__items {
   @include flex();
+  padding: 0 20px;
+  background-color: #eee;
 }
 
 .reasons__item {
   padding: 25px 35px;
-  background-color: #eee;
-  &--blue {
-    padding: 35px 25px;
-    @include bg-blue-col-white();
+  &--borders {
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+  }
+}
+
+.reasons__item-title,
+.reasons__item-text {
+  display: block;
+}
+
+.reasons__item-text,
+.reasons__item-num {
+  color: #333;
+}
+
+.reasons__item-title {
+  font-weight: 700;
+}
+
+.reasons__item-num {
+  position: relative;
+}
+
+.reasons__item-num::before,
+.reasons__item-num::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 1px;
+  top: 9px;
+  background-color: #333;
+}
+
+.reasons__item-num--blue::before,
+.reasons__item-num--blue::after {
+  background-color: #fff;
+}
+
+.reasons__item-num::before {
+  left: -15px;
+}
+
+.reasons__item-num::after {
+  left: 28px;
+}
+
+.reasons__item--blue {
+  padding: 35px 25px;
+  @include bg-blue-col-white();
+  & .reasons__item-text {
+    color: $white;
+  }
+  & .reasons__item-num {
+    color: $white;
+    &::before {
+      background-color: $white;
+    }
+    &::after {
+      background-color: $white;
+    }
   }
 }
 

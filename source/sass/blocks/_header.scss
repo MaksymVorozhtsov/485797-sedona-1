@@ -3,13 +3,10 @@
   background-color: $white;
 }
 
-.main-nav {
-  display: none;
-}
-
-.site-logo {
+.header__button {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 12px;
+  right: 8px;
+  background-color: #fff;
+  border: none;
 }
