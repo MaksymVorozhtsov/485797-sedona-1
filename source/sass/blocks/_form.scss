@@ -3,9 +3,8 @@
 }
 
 .form__fieldset {
-  padding: 0 25px;
+  padding: 25px;
   border: none;
-  border-top: 1px solid #eee;
 }
 
 .form__legend {
@@ -39,11 +38,11 @@
 }
 
 .form__submit {
+  @include bold();
+  @include bg-blue-col-white();
   display: block;
   margin: 0 auto;
-  width: calc(100% - 44px);
-  background-color: $blue;
-  color: $white;
-  @include bold();
+  width: calc(100% - 54px);
+  padding: 15px 0;
   border: none;
 }
