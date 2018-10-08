@@ -15,7 +15,12 @@ $white: #fff;
   justify-content: center;
 }
 
+@mixin center() {
+  text-align: center;
+}
+
 @mixin bold() {
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;

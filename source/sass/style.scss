@@ -5,7 +5,7 @@ body {
   font-weight: 400;
   color: #000;
   background-color: #f2f2f2;
-  text-transform: uppercase;
+  @include uppercase();
 }
 
 a {
@@ -43,3 +43,4 @@ img {
 @import 'blocks/hotelssearch';
 @import 'blocks/footer';
 @import 'blocks/social';
+@import 'blocks/form'

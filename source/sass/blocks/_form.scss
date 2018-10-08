@@ -1,0 +1,49 @@
+.form {
+  background-color: #fff;
+}
+
+.form__fieldset {
+  padding: 0 25px;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.form__legend {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0;
+  @include center();
+}
+
+.form__input-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form__input-wrap--block,
+.form__label--block {
+  display: block;
+}
+
+.form__input {
+  width: calc(100% - 44px);
+  background-color: #eee;
+  padding: 22px;
+  border: none;
+}
+
+.form__input-wrap label {
+  margin-right: 20px;
+}
+
+.form__submit {
+  display: block;
+  margin: 0 auto;
+  width: calc(100% - 44px);
+  background-color: $blue;
+  color: $white;
+  @include bold();
+  border: none;
+}
