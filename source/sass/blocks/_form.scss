@@ -1,5 +1,5 @@
 .form {
-  background-color: #fff;
+  background-color: $white;
 }
 
 .form__fieldset {
@@ -11,6 +11,7 @@
   font-size: 18px;
   font-weight: 700;
   padding: 10px 0;
+
   @include center();
 }
 
@@ -28,7 +29,7 @@
 
 .form__input {
   width: calc(100% - 44px);
-  background-color: #eee;
+  background-color: $grey;
   padding: 22px;
   border: none;
 }
