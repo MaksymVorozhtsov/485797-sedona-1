@@ -1,0 +1,16 @@
+.header {
+  height: 55px;
+  background-color: $white;
+}
+
+.header__button {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  background-color: $white;
+  border: none;
+}
+
+.header__button svg {
+  fill: $blue;
+}

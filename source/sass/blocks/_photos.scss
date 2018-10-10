@@ -1,0 +1,25 @@
+.photos {
+  background-color: $white;
+  font-size: 14px;
+  line-height: 24px;
+  border-bottom: 1px solid $grey;
+}
+
+.photos__item {
+  padding: 25px;
+  border-top: 1px solid $grey;
+}
+
+.photos__item-title {
+  margin: 0;
+}
+
+.photos__item-author {
+  text-transform: none;
+}
+
+.photos__item-likes {
+  display: block;
+  font-weight: 700;
+  margin-top: 5px;
+}

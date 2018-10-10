@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона / Форма</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize-8.0.0.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+      <meta charset="utf-8">
+      <title>HTML Academy: Седона / Галерея</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+      <link href="css/normalize-8.0.0.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <h1 class="sute__title visually-hidden">Sedona Gallery</h1>
     <div class="container">
       <header class="header">
-        <a class="site-logo" href="index.html">
-          <img src="#" alt="Sedona Logo" class="site-logo__image">
+        <a href="index.html" class="site-logo">
+          <img src="img/logo-sedona-mobile.svg" alt="Sedona Logo" class="site-logo__image">
         </a>
+        <button class="header__button">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+            <g>
+              <rect width="23" height="3.964"/>
+              <rect y="9.009" width="23" height="3.964"/>
+              <rect y="18.018" width="23" height="3.964"/>
+            </g>
+          </svg>
+        </button>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html" class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html" class="main-nav__link">Фото и видео</a>
+              <a class="main-nav__link  main-nav__link--active">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
+              <a href="form.html" class="main-nav__link">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">HTML Academy</a>
@@ -34,7 +44,7 @@
       <main class="main">
         <section class="hero">
           <h2 class="hero__title visually-hidden">SEDONA Gallery Page Hero</h2>
-          <img src="#" alt="Sedona slogan" class="hero__img hero__img-just-name">
+          <img src="img/text-sedona.svg" alt="Sedona slogan" class="hero__img hero__img-just-name">
         </section>
         <section class="photos">
           <div class="promo">
@@ -42,52 +52,69 @@
             <span class="promo__sub-title">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</span>
           </div>
           <div class="photos__item">
-            <img src="#" alt="Sedona Photo" class="photos__item-img">
+            <img src="img/photo-sunset-mobile@1x.jpg" alt="Sedona Photo" class="photos__item-img">
             <h3 class="photos__item-title">неродные просторы</h3>
             <span class="photos__item-author">Автор фото: Борис</span>
             <span class="photos__item-likes">1350</span>
           </div>
           <div class="photos__item">
-            <img src="#" alt="Sedona Photo" class="photos__item-img">
+            <img src="img/photo-cactus-mobile@1x.jpg" alt="Sedona Photo" class="photos__item-img">
             <h3 class="photos__item-title">Местная растительность</h3>
             <span class="photos__item-author">Автор фото: Сергей</span>
             <span class="photos__item-likes">143</span>
           </div>
           <div class="photos__item">
-            <img src="#" alt="Sedona Photo" class="photos__item-img">
+            <img src="img/photo-roads-mobile@1x.jpg" alt="Sedona Photo" class="photos__item-img">
             <h3 class="photos__item-title">Дорога на север</h3>
             <span class="photos__item-author">Автор фото: Петр</span>
             <span class="photos__item-likes">96</span>
           </div>
           <div class="photos__item">
-            <img src="#" alt="Sedona Photo" class="photos__item-img">
+            <img src="img/photo-bridge-mobile@1x.jpg" alt="Sedona Photo" class="photos__item-img">
             <h3 class="photos__item-title">Мост дьявола</h3>
             <span class="photos__item-author">Автор фото: Антон</span>
             <span class="photos__item-likes">254</span>
           </div>
         </section>
         <section class="video">
-          <h2 class="video__title title">Все еще сомневаетесь?</h2>
-          <span class="video__sub-title sub-title">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</span>
-          <video src="#" class="video__vid"></video>
+          <div class="promo">
+            <h2 class="promo__title">Все еще сомневаетесь?</h2>
+            <span class="promo__sub-title">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</span>
+          </div>
+          <img src="img/video-mobile@1x.jpg" class="video__vid">
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer footer--main">
         <span class="footer__hashtag">#VISITSEDONA</span>
-        <ul class="footer__list social">
+        <ul class="footer__social social">
           <li class="social__item social__item--tw">
+            <svg version="1.1" id="twitter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
+              <path id="twitter" fill="#FFFFFF" d="M10.95,0.144c1.685-0.496,2.983,0.27,3.577,1.179c0.673-0.231,1.33-0.481,2.011-0.708
+                c-0.004,0.861-0.522,1.513-0.856,1.768c0.685,0.17,1.303-0.491,1.303-0.491c-0.168,1-1.006,1.788-1.563,2.024
+                c-0.23,6.75-3.175,11.217-10.077,11.082c-0.522,0,0.075,0-0.446,0c-0.41,0-4.164-0.46-4.898-1.887
+                c2.271,0.195,3.893-0.422,4.693-1.178c-0.96-0.3-2.679-0.477-2.979-2.949c0.349,0.105,0.564,0.228,1.19,0.119
+                C1.705,8.247,0.374,7.53,0.448,5.33c0.285,0.328,1.067,0.536,1.34,0.472c-0.703-0.241-1.97-3.36-0.894-4.952
+                c1.818,1.854,3.735,3.606,7.152,3.773C8.254,2.33,9.184,0.793,10.95,0.144z"/>
+            </svg>
             <span class="visually-hidden">Седона в Twitter</span>
           </li>
           <li class="social__item social__item--fb">
+            <svg version="1.1" id="facebook-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+              <path id="facebook" fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+            </svg>
             <span class="visually-hidden">Седона в Facebook</span>
           </li>
           <li class="social__item social__item--ytb">
+            <svg version="1.1" id="youtube-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
+              <path id="youtube" fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
+            </svg>
             <span class="visually-hidden">Седона в Youtube</span>
           </li>
         </ul>
         <span class="footer__copy">
-          Сделано
-          <img src="#" alt="HTML Academy" class="footer__img">
+          Разработано
+          <img src="img/logo-htmlacademy.svg" alt="HTML Academy" class="footer__img">
         </span>
       </footer>
     </div>
