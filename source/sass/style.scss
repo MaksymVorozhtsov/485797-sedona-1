@@ -26,12 +26,8 @@ img {
   overflow: hidden;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
 @import "blocks/var";
+@import "blocks/container";
 @import "blocks/header";
 @import "blocks/sitelogo";
 @import "blocks/mainnav";
