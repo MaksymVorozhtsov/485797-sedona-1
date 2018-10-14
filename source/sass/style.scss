@@ -1,11 +1,12 @@
 @import "blocks/fonts";
+@import "blocks/var";
 
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
+  color: $black;
   background-color: #f2f2f2;
   text-transform: uppercase;
 }
@@ -28,7 +29,6 @@ img {
   overflow: hidden;
 }
 
-@import "blocks/var";
 @import "blocks/container";
 @import "blocks/header";
 @import "blocks/sitelogo";
@@ -42,4 +42,5 @@ img {
 @import "blocks/social";
 @import "blocks/form";
 @import "blocks/photos";
+@import "blocks/video";
 @import "blocks/nojs";

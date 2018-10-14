@@ -1,0 +1,7 @@
+.video {
+  background-color: $white;
+
+  @media (min-width: $tablet) {
+    padding: 0 $pad-tab;
+  }
+}

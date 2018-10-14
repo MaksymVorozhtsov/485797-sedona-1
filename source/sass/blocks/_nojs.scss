@@ -1,16 +1,24 @@
 .header.no-js {
-  padding-bottom: 55px;
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding-bottom: 55px;
+  }
 }
 
 .main-nav.no-js {
-  display: flex;
+  @media (min-width: $mobile) and (max-width: $mobile-max) {
+    display: flex;
+  }
 }
 
 .site-logo.no-js {
-  top: auto;
-  bottom: -35px;
+  @media (min-width: $mobile) and (max-width: $mobile-max) {
+    top: auto;
+    bottom: -35px;
+  }
 }
 
 .header__button.no-js {
-  display: none;
+  @media (min-width: $mobile) and (max-width: $mobile-max) {
+    display: none;
+  }
 }

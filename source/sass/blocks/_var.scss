@@ -1,12 +1,21 @@
 $blue: #81b3d2;
 $white: #ffffff;
 $grey: #eeeeee;
+$black: #000000;
+
+$mobile: 320px;
+$mobile-max: 767px;
+$tablet: 768px;
+$desktop: 1280px;
+
+$pad-mob: 25px;
+$pad-tab: 60px;
 
 @mixin flex() {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
   }

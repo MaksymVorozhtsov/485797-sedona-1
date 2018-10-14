@@ -1,26 +1,64 @@
 .features {
   list-style: none;
-  padding: 0;
+  padding: 36px 0 0 0;
   margin: 0;
   text-align: left;
 
   @include flex();
-  padding-top: 36px;
+
+  @media (min-width: $tablet) {
+    padding: 60px 0;
+  }
 }
 
 .features__item {
   display: flex;
   justify-content: flex-end;
   padding: 0 40px 36px 20px;
+  @media (min-width: $tablet) {
+    width: 33%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px;
+  }
+}
+
+.features__item-img {
+  &--house svg {
+    @media (min-width: $tablet) {
+      height: 72px;
+    }
+  }
+  &--burger svg {
+    @media (min-width: $tablet) {
+      height: 72px;
+    }
+  }
+  &--gift svg {
+    @media (min-width: $tablet) {
+      height: 72px;
+    }
+  }
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .features__item-img svg {
   fill: $blue;
+  @media (min-width: $tablet) {
+    width: auto;
+  }
 }
 
 .features__item-textblock {
   width: 200px;
   margin-left: 20px;
+  @media (min-width: $tablet) {
+    width: 165px;
+    margin-left: 0;
+  }
 }
 
 .features__item-title,
