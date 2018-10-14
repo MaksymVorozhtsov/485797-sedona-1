@@ -15,6 +15,7 @@
   display: flex;
   justify-content: flex-end;
   padding: 0 40px 36px 20px;
+
   @media (min-width: $tablet) {
     width: 33%;
     flex-direction: column;
@@ -30,16 +31,19 @@
       height: 72px;
     }
   }
+
   &--burger svg {
     @media (min-width: $tablet) {
       height: 72px;
     }
   }
+
   &--gift svg {
     @media (min-width: $tablet) {
       height: 72px;
     }
   }
+
   @media (min-width: $tablet) {
     margin-bottom: 20px;
   }
@@ -47,6 +51,7 @@
 
 .features__item-img svg {
   fill: $blue;
+
   @media (min-width: $tablet) {
     width: auto;
   }
@@ -55,6 +60,7 @@
 .features__item-textblock {
   width: 200px;
   margin-left: 20px;
+
   @media (min-width: $tablet) {
     width: 165px;
     margin-left: 0;

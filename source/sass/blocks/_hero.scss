@@ -9,13 +9,13 @@
   @include flex-center();
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 320px;
     height: 26px;
-    background-image: url('../img/bg-intro-triangle-mobile.svg');
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
   }
 
   @media (min-width: $tablet) {
@@ -25,7 +25,7 @@
     &::after {
       width: 768px;
       height: 57px;
-      background-image: url('../img/bg-intro-triangle-tablet.svg');
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
   }
 
@@ -34,7 +34,7 @@
 
     &::after {
       width: 1200px;
-      background-image: url('../img/bg-intro-triangle-desktop.svg');
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
   }
 

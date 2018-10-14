@@ -2,7 +2,8 @@
   display: none;
   flex-direction: column;
   text-align: center;
-  box-shadow: inset 0px -3px 5px 0px rgba(108,150,176,1);
+  box-shadow: inset 0px -3px 5px 0px rgba(108, 150, 176, 1);
+
   @media (min-width: $tablet) {
     display: block;
     height: 100%;
@@ -15,6 +16,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
@@ -31,6 +33,7 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
+
   @media (min-width: $tablet) {
     color: $black;
     font-size: 14px;
@@ -42,12 +45,15 @@
   background-color: $blue;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
+
   &--first {
     border-top: none;
   }
+
   &--last {
     border-bottom: none;
   }
+
   @media (min-width: $tablet) {
     border: none;
     background-color: $white;
