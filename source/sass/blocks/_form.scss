@@ -1,10 +1,48 @@
-.form {
+.form-section {
+  padding: 0 $pad-mob;
   background-color: $white;
+
+  @media (min-width: $tablet) {
+    padding: 0 $pad-tab;
+  }
+}
+
+.form {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .form__fieldset {
-  padding: $pad-mob;
+  padding: $pad-mob 0;
   border: none;
+
+  @media (min-width: $tablet) {
+    padding: 20px 0;
+    order: 3;
+    width: 100%
+  }
+
+  &--impr,
+  &--name {
+    @media (min-width: $tablet) {
+      width: 45%;
+    }
+  }
+
+  &--impr {
+    @media (min-width: $tablet) {
+      order: 1;
+    }
+  }
+
+  &--name {
+    @media (min-width: $tablet) {
+      order: 2;
+    }
+  }
 }
 
 .form__legend {
@@ -27,6 +65,21 @@
   display: block;
 }
 
+.form__contacts {
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__input-wrap--block {
+  @media (min-width: $desktop) {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .form__input {
   width: calc(100% - 44px);
   background-color: $grey;
@@ -38,12 +91,58 @@
   margin-right: 20px;
 }
 
+.form__checkboxes {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.form__checkbox {
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+  }
+}
+
+.form__bottom {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    order: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .form__submit {
   @include bold();
   @include bg-blue-col-white();
   display: block;
   margin: 0 auto;
-  width: calc(100% - 54px);
+  width: 100%;
   padding: 15px 0;
   border: none;
+
+  @media (min-width: $tablet) {
+    width: 324px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 480px;
+  }
+}
+
+.form__span {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }

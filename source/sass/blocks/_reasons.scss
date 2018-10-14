@@ -95,6 +95,12 @@
     height: 166px;
     padding: 40px 45px 50px 45px;
   }
+
+  @media (min-width: $desktop) {
+    width: 310px;
+    height: 310px;
+    padding: 40px 45px 50px 45px;
+  }
 }
 
 .reasons__item-img {

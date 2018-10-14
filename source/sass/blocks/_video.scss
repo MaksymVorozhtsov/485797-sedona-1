@@ -4,4 +4,12 @@
   @media (min-width: $tablet) {
     padding: 0 $pad-tab;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
