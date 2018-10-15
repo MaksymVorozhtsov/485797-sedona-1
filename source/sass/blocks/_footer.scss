@@ -3,6 +3,16 @@
   background-color: $white;
   padding: 30px 80px 20px 80px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 30px $pad-tab 35px $pad-tab;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 30px 120px 35px 120px;
+    align-items: center;
+  }
 }
 
 .footer__hashtag {
@@ -11,12 +21,17 @@
 
 .footer__social {
   margin: 30px 0;
+
+  @media (min-width: $tablet) {
+    width: 150px;
+  }
 }
 
-.footer__copy {
+.footer__copy-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $black;
 }
 
 .footer__img {

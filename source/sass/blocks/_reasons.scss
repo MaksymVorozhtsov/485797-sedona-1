@@ -5,6 +5,12 @@
 
 .reasons__large {
   @include flex();
+
+  &--mir {
+    @media (min-width: $tablet) {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 .reasons__items {
@@ -14,7 +20,7 @@
 }
 
 .reasons__item {
-  padding: 25px 35px;
+  padding: $pad-mob 35px;
 
   &--borders {
     border-top: 1px solid #d6d6d6;
@@ -64,7 +70,7 @@
 }
 
 .reasons__item--blue {
-  padding: 35px 25px;
+  padding: 35px $pad-mob;
 
   @include bg-blue-col-white();
 
@@ -82,6 +88,18 @@
     &::after {
       background-color: $white;
     }
+  }
+
+  @media (min-width: $tablet) {
+    width: 166px;
+    height: 166px;
+    padding: 40px 45px 50px 45px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 310px;
+    height: 310px;
+    padding: 40px 45px 50px 45px;
   }
 }
 
