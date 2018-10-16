@@ -11,6 +11,28 @@
       flex-direction: row-reverse;
     }
   }
+
+  &--first {
+    position: relative;
+
+    @media (min-width: $tablet) {
+      position: initial;
+    }
+  }
+
+  &--first::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -22px;
+    background-image: url("../img/bg-triangle.svg");
+    width: 320px;
+    height: 37px;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
 }
 
 .reasons__items {

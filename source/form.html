@@ -31,7 +31,7 @@
           <img src="img/logo-sedona-mobile.svg" alt="Sedona Logo" class="site-logo__image">
         </a>
         <button class="header__button no-js">
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
             <g>
               <rect width="23" height="3.964"/>
               <rect y="9.009" width="23" height="3.964"/>
@@ -51,6 +51,7 @@
         </section>
         <section class="form-section">
           <form action="#" class="form">
+            <h2 class="form__title visually-hidden">Форма отзыва</h2>
             <fieldset class="form__fieldset form__fieldset--name">
               <legend class="form__legend">Представьтесь:</legend>
               <div class="form__input-wrap">
@@ -81,7 +82,7 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--impr">
               <legend class="form__legend">Ваше Общее впечатление:</legend>
-              <input type="radio" name="impression" value="good" id="impression-good" class="form__input--radio visually-hidden" selected>
+              <input type="radio" name="impression" value="good" id="impression-good" class="form__input--radio visually-hidden" checked>
               <label for="impression-good" class="form__label--block">Скорее положительное</label>
               <input type="radio" name="impression" value="bad" id="impression-bad" class="form__input--radio visually-hidden">
               <label for="impression-good" class="form__label--block">Скорее отрицательное</label>
@@ -92,15 +93,15 @@
               <legend class="form__legend">Посещенные достопримечательности:</legend>
               <div class="form__checkboxes">
                 <div class="form__checkbox">
-                  <input type="checkbox" name="visited-bridge" id="visited-bridge" class="form__input--chk visually-hidden" selected>
+                  <input type="checkbox" name="visited-bridge" id="visited-bridge" class="form__input--chk visually-hidden" checked>
                   <label for="visited-bridge" class="form__label--block">Мост Дьявола</label>
                 </div>
                 <div class="form__checkbox">
-                  <input type="checkbox" name="visited-mount" id="visited-mount" class="form__input--chk visually-hidden" selected>
+                  <input type="checkbox" name="visited-mount" id="visited-mount" class="form__input--chk visually-hidden" checked>
                   <label for="visited-mount" class="form__label--block">Гора-Колокол</label>
                 </div>
                 <div class="form__checkbox">
-                  <input type="checkbox" name="visited-park" id="visited-park" class="form__input--chk visually-hidden" selected>
+                  <input type="checkbox" name="visited-park" id="visited-park" class="form__input--chk visually-hidden" checked>
                   <label for="visited-park" class="form__label--block">Слайд-парк</label>
                 </div>
                 <div class="form__checkbox">
@@ -126,7 +127,7 @@
         <span class="footer__hashtag">#VISITSEDONA</span>
         <ul class="footer__social social">
           <li class="social__item social__item--tw">
-            <svg version="1.1" id="twitter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
               <path id="twitter" fill="#FFFFFF" d="M10.95,0.144c1.685-0.496,2.983,0.27,3.577,1.179c0.673-0.231,1.33-0.481,2.011-0.708
                 c-0.004,0.861-0.522,1.513-0.856,1.768c0.685,0.17,1.303-0.491,1.303-0.491c-0.168,1-1.006,1.788-1.563,2.024
@@ -138,13 +139,13 @@
             <span class="visually-hidden">Седона в Twitter</span>
           </li>
           <li class="social__item social__item--fb">
-            <svg version="1.1" id="facebook-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
               <path id="facebook" fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
             </svg>
             <span class="visually-hidden">Седона в Facebook</span>
           </li>
           <li class="social__item social__item--ytb">
-            <svg version="1.1" id="youtube-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
               <path id="youtube" fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
             </svg>
             <span class="visually-hidden">Седона в Youtube</span>
