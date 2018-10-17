@@ -1,6 +1,7 @@
 .header {
   position: relative;
   background-color: $white;
+  padding-bottom: 55px;
 
   @media (min-width: $tablet) {
     height: 55px;
@@ -30,6 +31,10 @@
   @media (min-width: $tablet) {
     display: none;
   }
+}
+
+.header__button--hide {
+  display: none;
 }
 
 .header__button--open svg {
