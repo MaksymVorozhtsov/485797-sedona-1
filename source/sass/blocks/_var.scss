@@ -11,6 +11,10 @@ $desktop: 1280px;
 $pad-mob: 25px;
 $pad-tab: 60px;
 
+@mixin font() {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
 @mixin flex() {
   display: flex;
   flex-direction: column;

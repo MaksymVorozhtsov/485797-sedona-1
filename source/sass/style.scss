@@ -1,8 +1,10 @@
+@import "normalize8.scss";
 @import "blocks/fonts";
 @import "blocks/var";
 
 body {
-  font-family: "PT Sans", "Arial", sans-serif;
+  @include font();
+
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;

@@ -85,6 +85,10 @@
   background-color: $grey;
   padding: 22px;
   border: none;
+
+  &--txt {
+    @include font();
+  }
 }
 
 .form__input-wrap label {
@@ -121,8 +125,10 @@
 }
 
 .form__submit {
+  @include font();
   @include bold();
   @include bg-blue-col-white();
+
   display: block;
   margin: 0 auto;
   width: 100%;
