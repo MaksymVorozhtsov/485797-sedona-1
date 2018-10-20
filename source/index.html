@@ -29,7 +29,11 @@
         </ul>
       </nav>
       <a class="site-logo no-js">
-        <img src="img/logo-sedona-mobile.svg" alt="Sedona Logo" class="site-logo__image">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="Sedona Logo" class="site-logo__image">
+        </picture>
       </a>
       <button class="header__button header__button--open no-js">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">

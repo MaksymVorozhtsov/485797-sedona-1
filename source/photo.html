@@ -29,7 +29,11 @@
         </ul>
       </nav>
       <a href="index.html" class="site-logo no-js">
-        <img src="img/logo-sedona-mobile.svg" alt="Sedona Logo" class="site-logo__image">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="Sedona Logo" class="site-logo__image">
+        </picture>
       </a>
       <button class="header__button header__button--open no-js">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982"
@@ -143,7 +147,7 @@
         <div class="photos__item">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@1x.jpg 2x 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@1x.jpg 2x">
             <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Sedona Photo" class="photos__item-img">
           </picture>
           <div class="photos__item-textblock">
