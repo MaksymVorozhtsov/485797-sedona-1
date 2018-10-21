@@ -53,21 +53,25 @@
   @include center();
 }
 
-.form__input-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
 .form__label--block {
   display: block;
 }
 
 .form__input-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
   &--block {
     display: block;
     position: relative;
+
+    @media (min-width: $desktop) {
+      width: 48%;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &::after {
@@ -114,14 +118,6 @@
 
 .form__contacts {
   @media (min-width: $desktop) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.form__input-wrap--block {
-  @media (min-width: $desktop) {
-    width: 48%;
     display: flex;
     justify-content: space-between;
   }
