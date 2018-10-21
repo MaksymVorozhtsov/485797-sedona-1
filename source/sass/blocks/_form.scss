@@ -60,9 +60,56 @@
   margin-bottom: 15px;
 }
 
-.form__input-wrap--block,
 .form__label--block {
   display: block;
+}
+
+.form__input-wrap {
+  &--block {
+    display: block;
+    position: relative;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &--phone::before {
+    top: 41px;
+    right: 18px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icon-phone.svg");
+
+    @media (min-width: $desktop) {
+      top: 21px;
+    }
+  }
+
+  &--email::before {
+    top: 42px;
+    right: 19px;
+    width: 17px;
+    height: 15px;
+    background-image: url("../img/icon-mail.svg");
+
+    @media (min-width: $desktop) {
+      top: 23px;
+    }
+  }
 }
 
 .form__contacts {
@@ -82,12 +129,18 @@
 
 .form__input {
   width: calc(100% - 44px);
-  background-color: $grey;
+  background-color: #f2f2f2;
   padding: 22px;
   border: none;
 
   &--txt {
     @include font();
+  }
+
+  &::placeholder {
+    color: $black;
+    font-weight: 700;
+    font-size: 18px;
   }
 }
 
