@@ -100,34 +100,34 @@
             <input type="radio" name="impression" value="good" id="impression-good" class="form__input--radio visually-hidden" checked>
             <label for="impression-good" class="form__label--block form__label--radio">Скорее положительное</label>
             <input type="radio" name="impression" value="bad" id="impression-bad" class="form__input--radio visually-hidden">
-            <label for="impression-good" class="form__label--block form__label--radio">Скорее отрицательное</label>
+            <label for="impression-bad" class="form__label--block form__label--radio">Скорее отрицательное</label>
             <input type="radio" name="impression" value="none" id="impression-none" class="form__input--radio visually-hidden">
-            <label for="impression-good" class="form__label--block form__label--radio">Затрудняюсь ответить</label>
+            <label for="impression-none" class="form__label--block form__label--radio">Затрудняюсь ответить</label>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Посещенные достопримечательности:</legend>
             <div class="form__checkboxes">
               <div class="form__checkbox">
                 <input type="checkbox" name="visited-bridge" id="visited-bridge" class="form__input--chk visually-hidden" checked>
-                <label for="visited-bridge" class="form__label--block">Мост Дьявола</label>
+                <label for="visited-bridge" class="form__label--block form__label--chk">Мост Дьявола</label>
               </div>
               <div class="form__checkbox">
                 <input type="checkbox" name="visited-mount" id="visited-mount" class="form__input--chk visually-hidden" checked>
-                <label for="visited-mount" class="form__label--block">Гора-Колокол</label>
+                <label for="visited-mount" class="form__label--block form__label--chk">Гора-Колокол</label>
               </div>
               <div class="form__checkbox">
                 <input type="checkbox" name="visited-park" id="visited-park" class="form__input--chk visually-hidden" checked>
-                <label for="visited-park" class="form__label--block">Слайд-парк</label>
+                <label for="visited-park" class="form__label--block form__label--chk">Слайд-парк</label>
               </div>
               <div class="form__checkbox">
                 <input type="checkbox" name="visited-rock" id="visited-rock" class="form__input--chk visually-hidden">
-                <label for="visited-rock" class="form__label--block">Красные скалы</label>
+                <label for="visited-rock" class="form__label--block form__label--chk">Красные скалы</label>
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--text">
             <legend class="form__legend">Опишите свои эмоции:</legend>
-            <textarea name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги" class="form__input form__input--txt"></textarea>
+            <textarea name="emotions" cols="30" rows="7" placeholder="Опишите подробно все свои восторги" class="form__input form__input--txt"></textarea>
           </fieldset>
           <div class="form__bottom">
             <input type="submit" value="Отправить отзыв" class="form__submit">

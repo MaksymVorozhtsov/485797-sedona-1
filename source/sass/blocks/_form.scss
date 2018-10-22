@@ -1,5 +1,5 @@
 .form-section {
-  padding: 0 15px;
+  padding: 0 15px 40px 15px;
   background-color: $white;
 
   @media (min-width: $tablet) {
@@ -43,10 +43,15 @@
       order: 2;
     }
   }
+
+  &--text .form__legend {
+    padding: 0;
+  }
 }
 
 .form__legend {
   font-size: 18px;
+  line-height: 22px;
   font-weight: 700;
   padding: 10px 0;
 
@@ -64,7 +69,55 @@
 
   &--radio {
     padding: 15px 0 33px 80px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -5px;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-color: #eeeeee;
+      border-radius: 50%;
+    }
   }
+
+  &--chk {
+    padding: 15px 0 43px 80px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -5px;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-color: #eeeeee;
+      border-radius: 4px;
+    }
+  }
+}
+
+.form__input--radio:checked + .form__label--radio::after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  left: 19px;
+  width: 22px;
+  height: 22px;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.form__input--chk:checked + .form__label--chk::after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  left: 19px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
 }
 
 .form__input-wrap {
@@ -82,24 +135,24 @@
       display: flex;
       justify-content: space-between;
     }
-  }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 58px;
-    height: 58px;
-    background-color: #e6e6e6;
-  }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+    }
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    top: 50px;
-    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      top: 50px;
+      z-index: 1;
+    }
   }
 
   &--phone::before {
@@ -199,7 +252,7 @@
   @include bg-blue-col-white();
 
   display: block;
-  margin: 0 auto;
+  margin: 23px auto 0 auto;
   width: 100%;
   padding: 15px 0;
   border: none;
