@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона / Форма</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -96,11 +98,11 @@
           <fieldset class="form__fieldset form__fieldset--impr">
             <legend class="form__legend">Ваше Общее впечатление:</legend>
             <input type="radio" name="impression" value="good" id="impression-good" class="form__input--radio visually-hidden" checked>
-            <label for="impression-good" class="form__label--block">Скорее положительное</label>
+            <label for="impression-good" class="form__label--block form__label--radio">Скорее положительное</label>
             <input type="radio" name="impression" value="bad" id="impression-bad" class="form__input--radio visually-hidden">
-            <label for="impression-good" class="form__label--block">Скорее отрицательное</label>
+            <label for="impression-good" class="form__label--block form__label--radio">Скорее отрицательное</label>
             <input type="radio" name="impression" value="none" id="impression-none" class="form__input--radio visually-hidden">
-            <label for="impression-good" class="form__label--block">Затрудняюсь ответить</label>
+            <label for="impression-good" class="form__label--block form__label--radio">Затрудняюсь ответить</label>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Посещенные достопримечательности:</legend>

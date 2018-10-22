@@ -53,8 +53,18 @@
   @include center();
 }
 
-.form__label--block {
-  display: block;
+.form__label {
+  &--block {
+    display: block;
+    position: relative;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &--radio {
+    padding: 15px 0 33px 80px;
+  }
 }
 
 .form__input-wrap {
@@ -88,11 +98,11 @@
     content: "";
     position: absolute;
     background-repeat: no-repeat;
+    top: 50px;
     z-index: 1;
   }
 
   &--phone::before {
-    top: 41px;
     right: 18px;
     width: 18px;
     height: 18px;
@@ -104,7 +114,6 @@
   }
 
   &--email::before {
-    top: 42px;
     right: 19px;
     width: 17px;
     height: 15px;
@@ -120,6 +129,17 @@
   @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
+  }
+
+  & .form__label {
+    display: block;
+    margin-bottom: 8px;
+    padding-left: 24px;
+
+    @media (min-width:$tablet) {
+      margin-bottom: 0px;
+      padding-left: 0px;
+    }
   }
 }
 
