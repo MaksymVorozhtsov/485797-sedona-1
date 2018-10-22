@@ -1,11 +1,16 @@
 .promo {
-  padding: 40px $pad-mob 30px $pad-mob;
+  padding: 40px 20px 30px 20px;
   background-color: $white;
   line-height: 26px;
   text-align: center;
 
   &--inner {
     padding-bottom: 22px;
+  }
+
+  &--form {
+    line-height: 23px;
+    padding-bottom: 28px;
   }
 }
 

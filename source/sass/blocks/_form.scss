@@ -1,5 +1,5 @@
 .form-section {
-  padding: 0 $pad-mob;
+  padding: 0 15px;
   background-color: $white;
 
   @media (min-width: $tablet) {
@@ -16,7 +16,7 @@
 }
 
 .form__fieldset {
-  padding: $pad-mob 0;
+  padding: 15px 0 $pad-mob 0;
   border: none;
 
   @media (min-width: $tablet) {
