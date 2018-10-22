@@ -35,8 +35,9 @@
 .main-nav__link {
   color: $white;
   font-size: 18px;
-  line-height: 40px;
-  font-weight: bold;
+  line-height: 42px;
+  font-weight: 700;
+  padding: 6px 0;
 
   @media (min-width: $tablet) {
     color: $black;

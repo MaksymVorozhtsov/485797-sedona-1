@@ -12,7 +12,7 @@
 .header__button {
   position: absolute;
   border: none;
-  right: 8px;
+  right: 13px;
 }
 
 .header__button--open {
@@ -25,7 +25,7 @@
 }
 
 .header__button--close {
-  top: 10px;
+  top: 14px;
   background-color: $blue;
 
   @media (min-width: $tablet) {

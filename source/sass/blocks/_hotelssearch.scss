@@ -6,6 +6,8 @@
 
 .hotels-search__text {
   padding: 0 20px;
+  margin-top: 22px;
+  line-height: 23px;
 
   &--bold {
     @include bold();
@@ -16,7 +18,7 @@
   display: block;
   width: 280px;
   padding: 16px 0;
-  margin: 30px auto 50px auto;
+  margin: 34px auto 50px auto;
 
   @include bold();
   @include bg-blue-col-white();

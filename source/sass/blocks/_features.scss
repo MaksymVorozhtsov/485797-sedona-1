@@ -1,6 +1,6 @@
 .features {
   list-style: none;
-  padding: 36px 0 0 0;
+  padding: 36px 0 7px 0;
   margin: 0;
   text-align: left;
 
@@ -13,8 +13,8 @@
 
 .features__item {
   display: flex;
-  justify-content: flex-end;
-  padding: 0 40px 36px 20px;
+  justify-content: flex-start;
+  padding: 0 40px 30px 20px;
 
   @media (min-width: $tablet) {
     width: 33%;
@@ -26,6 +26,8 @@
 }
 
 .features__item-img {
+  width: 30px;
+
   &--house svg {
     @media (min-width: $tablet) {
       height: 72px;
@@ -51,8 +53,10 @@
 
 .features__item-img svg {
   fill: $blue;
+  margin-top: -10px;
 
   @media (min-width: $tablet) {
+    margin-top: 0;
     width: auto;
   }
 }
@@ -74,5 +78,5 @@
 }
 
 .features__item-title {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }

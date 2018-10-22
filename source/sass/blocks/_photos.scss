@@ -18,7 +18,7 @@
 }
 
 .photos__item {
-  padding: $pad-mob;
+  padding: 20px;
   border-top: 1px solid $grey;
 
   @media (min-width: $tablet) {
@@ -46,7 +46,10 @@
 }
 
 .photos__item-textblock {
+  margin-top: 18px;
+
   @media (min-width: $tablet) {
+    margin-top: 0;
     padding: 14px 20px 17px 20px;
     display: flex;
     justify-content: space-between;
@@ -64,6 +67,7 @@
 }
 
 .photos__item-title {
+  font-size: 14px;
   margin: 0;
 }
 
