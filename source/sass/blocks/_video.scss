@@ -68,6 +68,10 @@
     height: 9px;
     border-radius: 50%;
     cursor: pointer;
+
+    @media (min-width: $tablet) {
+      left: 110px;
+    }
   }
 }
 

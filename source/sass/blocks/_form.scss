@@ -25,16 +25,48 @@
     width: 100%;
   }
 
-  &--impr,
-  &--name {
+  &--impr {
     @media (min-width: $tablet) {
       width: 45%;
+    }
+  }
+
+  &--name {
+    @media (min-width: $tablet) {
+      width: 41%;
     }
   }
 
   &--impr {
     @media (min-width: $tablet) {
       order: 1;
+    }
+  }
+
+  &--name .form__legend,
+  &--impr .form__legend {
+    @media (min-width: $tablet) {
+      text-align: left;
+    }
+  }
+
+  &--contact .form__legend {
+    @media (min-width: $tablet) {
+      padding-bottom: 12px;
+    }
+  }
+
+  &--attended .form__legend {
+    @media (min-width: $tablet) {
+      width: 50%;
+      padding-top: 20px;
+      padding-bottom: 28px;
+    }
+  }
+
+  &--text .form__legend {
+    @media (min-width: $tablet) {
+      margin-bottom: 36px;
     }
   }
 
@@ -56,6 +88,12 @@
   padding: 10px 0;
 
   @include center();
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    padding-top: 26px;
+    padding-bottom: 44px;
+  }
 }
 
 .form__label {
@@ -69,6 +107,10 @@
 
   &--radio {
     padding: 15px 0 33px 80px;
+
+    @media (min-width: $tablet) {
+      padding: 15px 0 42px 74px;
+    }
 
     &::before {
       position: absolute;
@@ -85,6 +127,10 @@
   &--chk {
     padding: 15px 0 43px 80px;
 
+    @media (min-width: $tablet) {
+      padding: 15px 0 50px 50px;
+    }
+
     &::before {
       position: absolute;
       content: "";
@@ -94,6 +140,10 @@
       height: 60px;
       background-color: #eeeeee;
       border-radius: 4px;
+
+      @media (min-width: $tablet) {
+        left: -32px;
+      }
     }
   }
 }
@@ -118,6 +168,10 @@
   height: 22px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    left: -13px;
+  }
 }
 
 .form__input-wrap {
@@ -152,6 +206,12 @@
       background-repeat: no-repeat;
       top: 50px;
       z-index: 1;
+    }
+  }
+
+  &--phone {
+    @media (min-width: $tablet) {
+      margin-bottom: 24px;
     }
   }
 
@@ -190,8 +250,8 @@
     padding-left: 24px;
 
     @media (min-width: $tablet) {
-      margin-bottom: 0;
-      padding-left: 0;
+      margin-bottom: 9px;
+      padding-left: 20px;
     }
   }
 }
@@ -222,6 +282,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-left: 122px;
+    margin-bottom: 20px;
   }
 }
 
@@ -243,6 +305,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
   }
 }
 
