@@ -27,19 +27,15 @@
 
   &--impr {
     @media (min-width: $tablet) {
+      order: 1;
       width: 45%;
     }
   }
 
   &--name {
     @media (min-width: $tablet) {
+      order: 2;
       width: 41%;
-    }
-  }
-
-  &--impr {
-    @media (min-width: $tablet) {
-      order: 1;
     }
   }
 
@@ -65,19 +61,11 @@
   }
 
   &--text .form__legend {
+    padding: 0;
+
     @media (min-width: $tablet) {
       margin-bottom: 36px;
     }
-  }
-
-  &--name {
-    @media (min-width: $tablet) {
-      order: 2;
-    }
-  }
-
-  &--text .form__legend {
-    padding: 0;
   }
 }
 
