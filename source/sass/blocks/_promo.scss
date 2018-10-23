@@ -6,6 +6,13 @@
 
   &--inner {
     padding-bottom: 22px;
+
+    & .promo__title {
+      @media (min-width: $tablet) {
+        font-size: 30px;
+        margin: 34px auto 0;
+      }
+    }
   }
 
   &--form {
@@ -38,5 +45,10 @@
 
   &--inner {
     margin-top: 25px;
+
+    @media (min-width: $tablet) {
+      margin: 31px auto 0 auto;
+      width: 61.4%;;
+    }
   }
 }

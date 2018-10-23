@@ -1,9 +1,9 @@
 .video {
   background-color: $white;
-  padding-bottom: 100px;
+  padding-bottom: 105px;
 
   @media (min-width: $tablet) {
-    padding: 0 $pad-tab;
+    padding: 0 $pad-tab 40px $pad-tab;
   }
 
   @media (min-width: $desktop) {
@@ -18,3 +18,109 @@
     padding-top: 30px;
   }
 }
+
+.video__player {
+  position: relative;
+  margin-top: 10px;
+
+  @media (min-width: $tablet) {
+    margin-top: 20px;
+    display: block;
+  }
+}
+
+.video__length {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 280px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    left: 0;
+    height: 93px;
+  }
+}
+
+.video__length-bar {
+  position: relative;
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  @media (min-width: $tablet) {
+    width: 390px;
+    margin-right: 70px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: 35px;
+    background-color: $white;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.video__controls {
+  position: absolute;
+  bottom: -65px;
+  left: 20px;
+  width: 234px;
+  height: 19px;
+  background-color: #f2f2f2;
+  padding: 23px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    background-color: $white;
+    height: 1px;
+    width: auto;
+  }
+
+  & svg {
+    fill: #333333;
+    cursor: pointer;
+
+    @media (min-width: $tablet) {
+      fill: $white;
+    }
+  }
+}
+
+.video__replay {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: -75px;
+    right: 15px;
+  }
+}
+
+.video__subtitles {
+  margin-left: 105px;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: -75px;
+    right: -490px;
+  }
+}
+
+.video__fullscreen {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: -75px;
+    right: -540px;
+  }
+}
+

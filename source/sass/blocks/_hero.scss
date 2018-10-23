@@ -54,12 +54,19 @@
     padding: 35px 20px 45px 20px;
 
     @media (min-width: $tablet) {
-      padding: 95px 0 120px 0;
+      padding: 95px 0 117px 0;
       background-position: bottom;
     }
 
     @media (min-width: $desktop) {
       padding: 105px 0 125px 0;
     }
+  }
+}
+
+.hero__img-just-name {
+  @media (min-width: $tablet) {
+    width: 450px;
+    margin-left: 5px;
   }
 }

@@ -5,7 +5,7 @@
   border-bottom: 1px solid $grey;
 
   @media (min-width: $tablet) {
-    padding: $pad-tab;
+    padding: 15px $pad-tab 5px $pad-tab;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -50,7 +50,7 @@
 
   @media (min-width: $tablet) {
     margin-top: 0;
-    padding: 14px 20px 17px 20px;
+    padding: 14px 28px 17px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,4 +93,8 @@
 .photos__item-likes-num {
   display: block;
   margin: 4px 0 0 15px;
+
+  @media (min-width: $tablet) {
+    margin: 4px 0 0 10px;
+  }
 }
