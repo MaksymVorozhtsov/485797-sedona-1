@@ -2,6 +2,10 @@
   padding-top: 30px;
   background-color: $white;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding-top: 55px;
+  }
 }
 
 .hotels-search__text {
@@ -9,8 +13,16 @@
   margin-top: 22px;
   line-height: 23px;
 
+  @media (min-width: $tablet) {
+    margin: 25px auto 0 auto;
+  }
+
   &--bold {
     @include bold();
+
+    @media (min-width: $tablet) {
+      font-size: 30px;
+    }
   }
 }
 
@@ -22,4 +34,10 @@
 
   @include bold();
   @include bg-blue-col-white();
+
+  @media (min-width: $tablet) {
+    width: 457px;
+    margin-top: 45px;
+    margin-bottom: 57px;
+  }
 }

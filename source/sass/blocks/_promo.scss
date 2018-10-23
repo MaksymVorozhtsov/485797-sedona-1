@@ -12,12 +12,23 @@
     line-height: 23px;
     padding-bottom: 28px;
   }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 50px;
+  }
 }
 
 .promo__title {
   font-size: 18px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 25px;
+    width: 80%;
+    margin: 13px auto 0 auto;
+  }
 }
 
 .promo__sub-title {

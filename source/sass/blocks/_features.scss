@@ -23,10 +23,32 @@
     text-align: center;
     padding: 0 40px;
   }
+
+  &--house {
+    @media (min-width: $tablet) {
+      order: 0;
+    }
+  }
+
+  &--gift {
+    @media (min-width: $tablet) {
+      order: 2;
+    }
+  }
+
+  &--burder {
+    @media (min-width: $tablet) {
+      order: 1;
+    }
+  }
 }
 
 .features__item-img {
   width: 30px;
+
+  @media (min-width: $tablet) {
+    width: auto;
+  }
 
   &--house svg {
     @media (min-width: $tablet) {
@@ -79,4 +101,9 @@
 
 .features__item-title {
   margin-bottom: 17px;
+
+  @media (min-width: $tablet) {
+    font-size: 22px;
+    margin: 5px 0 25px 0;
+  }
 }

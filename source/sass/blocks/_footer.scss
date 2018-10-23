@@ -5,11 +5,11 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    padding: 30px $pad-tab 35px $pad-tab;
+    padding: 0 $pad-tab 35px $pad-tab;
     align-items: center;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding: 30px 120px 35px 120px;
     align-items: center;
   }

@@ -39,10 +39,26 @@
   @include flex();
   padding: 0 20px;
   background-color: $grey;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 15px 0;
+  }
+
+  & .reasons__item-text {
+    @media (min-width: $tablet) {
+      width: 74%;
+      margin: 0 auto;
+    }
+  }
+
 }
 
 .reasons__item {
   padding: 27px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 48px 20px 27px 20px;
+  }
 
   &--borders {
     border-top: 1px solid #d6d6d6;
@@ -71,20 +87,22 @@
     }
 
     @media (min-width: $tablet) {
-      width: 166px;
-      height: 166px;
-      padding: 40px 45px 50px 45px;
+      width: 22%;
+      height: auto;
+      padding: 40px 45px;
     }
 
     @media (min-width: $desktop) {
-      width: 310px;
-      height: 310px;
       padding: 40px 45px 50px 45px;
     }
   }
 
   &--first {
     padding-top: 55px;
+
+    @media (min-width: $tablet) {
+      padding-top: 50px;
+    }
   }
 }
 
@@ -101,12 +119,29 @@
 .reasons__item-title {
   font-size: 18px;
   font-weight: 700;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 22px;
+  }
+
+  &--black {
+    @media (min-width: $tablet) {
+      line-height: 24px;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
 }
 
 .reasons__item-num {
   display: inline-block;
   position: relative;
   margin: 11px 0 17px 0;
+
+  @media (min-width: $tablet) {
+    margin: 15px 0 20px 0;
+  }
 }
 
 .reasons__item-num::before,

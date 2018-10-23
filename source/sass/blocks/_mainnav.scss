@@ -44,6 +44,18 @@
     font-size: 14px;
     line-height: 26px;
   }
+
+  &--photo {
+    @media (min-width: $tablet) {
+      margin-left: 26px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet) {
+      margin-left: 157px;
+    }
+  }
 }
 
 .main-nav__item {
