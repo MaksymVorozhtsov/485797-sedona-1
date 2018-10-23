@@ -29,6 +29,10 @@
     width: 150px;
     margin: 39px 10px 40px 0;
   }
+
+  @media (min-width: $tablet) {
+    margin: 3px 10px 20px 0;
+  }
 }
 
 .footer__copy-link {

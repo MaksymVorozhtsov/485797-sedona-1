@@ -36,6 +36,11 @@
     width: 80%;
     margin: 13px auto 0 auto;
   }
+
+  @media (min-width: $tablet) {
+    width: 50%;
+    margin: 11px auto 0 auto;
+  }
 }
 
 .promo__sub-title {

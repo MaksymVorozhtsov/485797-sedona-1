@@ -40,4 +40,10 @@
     margin-top: 45px;
     margin-bottom: 57px;
   }
+
+  @media (min-width: $desktop) {
+    width: 457px;
+    margin-top: 48px;
+    margin-bottom: 67px;
+  }
 }

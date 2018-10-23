@@ -14,6 +14,10 @@
     box-shadow: none;
     padding: 0 $pad-mob 0 50px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0 70px 0 93px;
+  }
 }
 
 .main-nav__list {
@@ -49,11 +53,19 @@
     @media (min-width: $tablet) {
       margin-left: 26px;
     }
+
+    @media (min-width: $desktop) {
+      margin-left: 23px;
+    }
   }
 
   &--form {
     @media (min-width: $tablet) {
       margin-left: 157px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 242px;
     }
   }
 }
