@@ -4,8 +4,17 @@
   line-height: 26px;
   text-align: center;
 
+  @media (min-width: $tablet) {
+    padding-bottom: 50px;
+  }
+
   &--inner {
     padding-bottom: 22px;
+
+    @media (min-width: $desktop) {
+      padding-top: 76px;
+      padding-bottom: 67px;
+    }
 
     & .promo__title {
       @media (min-width: $tablet) {
@@ -18,10 +27,6 @@
   &--form {
     line-height: 23px;
     padding-bottom: 28px;
-  }
-
-  @media (min-width: $tablet) {
-    padding-bottom: 50px;
   }
 }
 

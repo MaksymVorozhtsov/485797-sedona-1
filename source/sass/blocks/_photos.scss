@@ -57,7 +57,8 @@
   }
 
   @media (min-width: $desktop) {
-    width: calc(100% - 40px);
+    padding: 14px 23px 17px 20px;
+    width: calc(100% - 43px);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -80,6 +81,10 @@
   align-items: center;
   justify-content: flex-start;
   font-weight: 700;
+
+  @media (min-width: $desktop) {
+    width: 64px;
+  }
 
   svg {
     fill: #a9a9a9;
