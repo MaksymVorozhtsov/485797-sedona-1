@@ -45,3 +45,18 @@ $pad-tab: 60px;
   background-color: $blue;
   color: $white;
 }
+
+@mixin button-int {
+  &:hover {
+    background-color: #669ec1;
+  }
+
+  &:focus {
+    background-color: #5596be;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &[disabled] {
+    background-color: #e5e5e5;
+  }
+}

@@ -44,7 +44,12 @@
   padding: 6px 0;
 
   &:hover {
-    color: $blue;
+    background-color: #669EC1;
+
+    @media (min-width: $desktop) {
+      background-color: transparent;
+      color: $blue;
+    }
   }
 
   &:focus {
@@ -78,15 +83,21 @@
   }
 
   &--active {
-    color: #766357;
+    @media (min-width: $tablet) {
+      color: #766357;
+    }
   }
 
   &--active:hover {
-    color: #766357;
+    @media (min-width: $tablet) {
+      color: #766357;
+    }
   }
 
   &--active:focus {
-    opacity: 0.3;
+    @media (min-width: $tablet) {
+      opacity: 0.3;
+    }
   }
 }
 

@@ -114,6 +114,7 @@
     text-transform: none;
     font-weight: 700;
     font-size: 18px;
+    cursor: pointer;
   }
 
   &--radio {
@@ -130,8 +131,20 @@
       left: 0;
       width: 60px;
       height: 60px;
-      background-color: #eeeeee;
+      background-color: #f2f2f2;
       border-radius: 50%;
+    }
+
+    &:hover::before {
+      background-color: #e5e5e5;
+    }
+
+    &:active::before {
+      background-color: #d5d5d5;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 
@@ -149,12 +162,24 @@
       left: 0;
       width: 60px;
       height: 60px;
-      background-color: #eeeeee;
+      background-color: #f2f2f2;
       border-radius: 4px;
 
       @media (min-width: $tablet) {
         left: -32px;
       }
+    }
+
+    &:hover::before {
+      background-color: #e5e5e5;
+    }
+
+    &:active::before {
+      background-color: #d5d5d5;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 }
@@ -353,12 +378,14 @@
   @include font();
   @include bold();
   @include bg-blue-col-white();
+  @include button-int();
 
   display: block;
   margin: 23px auto 0 auto;
   width: 100%;
   padding: 15px 0;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     width: 324px;
