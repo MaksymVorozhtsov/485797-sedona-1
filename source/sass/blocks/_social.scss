@@ -11,6 +11,19 @@
   align-items: center;
   width: 46px;
   height: 46px;
+  cursor: pointer;
 
   @include bg-blue-col-white();
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  & svg {
+    fill: $white;
+  }
 }

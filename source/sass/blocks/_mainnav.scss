@@ -43,6 +43,14 @@
   font-weight: 700;
   padding: 6px 0;
 
+  &:hover {
+    color: $blue;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     color: $black;
     font-size: 14px;
@@ -67,6 +75,18 @@
     @media (min-width: $desktop) {
       margin-left: 242px;
     }
+  }
+
+  &--active {
+    color: #766357;
+  }
+
+  &--active:hover {
+    color: #766357;
+  }
+
+  &--active:focus {
+    opacity: 0.3;
   }
 }
 

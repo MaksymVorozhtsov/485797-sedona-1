@@ -44,4 +44,12 @@
 
 .footer__img {
   margin-left: 10px;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

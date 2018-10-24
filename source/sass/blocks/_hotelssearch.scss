@@ -35,6 +35,19 @@
   @include bold();
   @include bg-blue-col-white();
 
+  &:hover {
+    background-color: #669ec1;
+  }
+
+  &:focus {
+    background-color: #5596be;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &[disabled] {
+    background-color: #e5e5e5;
+  }
+
   @media (min-width: $tablet) {
     width: 457px;
     margin-top: 45px;
