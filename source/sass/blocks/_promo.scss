@@ -21,6 +21,12 @@
         font-size: 30px;
         margin: 34px auto 0;
       }
+
+      &--video {
+        @media (min-width: $desktop) {
+          margin-top: 40px;
+        }
+      }
     }
   }
 
@@ -42,9 +48,15 @@
     margin: 13px auto 0 auto;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     width: 50%;
     margin: 11px auto 0 auto;
+  }
+
+  &--video {
+    @media (min-width: $desktop) {
+      width: auto;
+    }
   }
 }
 
