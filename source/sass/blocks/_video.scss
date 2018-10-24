@@ -49,6 +49,10 @@
     left: 0;
     height: 93px;
   }
+
+  @media (min-width: $desktop) {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 .video__length-bar {
@@ -60,6 +64,10 @@
   @media (min-width: $tablet) {
     width: 390px;
     margin-right: 70px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 537px;
   }
 
   &::before {
@@ -122,6 +130,10 @@
     top: -75px;
     right: -490px;
   }
+
+  @media (min-width: $desktop) {
+    right: -641px;
+  }
 }
 
 .video__fullscreen {
@@ -129,5 +141,9 @@
     position: absolute;
     top: -75px;
     right: -540px;
+  }
+
+  @media (min-width: $desktop) {
+    right: -692px;
   }
 }
