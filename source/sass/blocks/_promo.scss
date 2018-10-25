@@ -1,18 +1,82 @@
 .promo {
-  padding: 40px $pad-mob 30px $pad-mob;
+  padding: 40px 20px 30px 20px;
   background-color: $white;
   line-height: 26px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 50px;
+  }
+
+  &--inner {
+    padding-bottom: 22px;
+
+    @media (min-width: $desktop) {
+      padding-top: 76px;
+      padding-bottom: 67px;
+    }
+
+    & .promo__title {
+      @media (min-width: $tablet) {
+        font-size: 30px;
+        margin: 34px auto 0;
+      }
+
+      &--video {
+        @media (min-width: $desktop) {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+
+  &--form {
+    line-height: 23px;
+    padding-bottom: 28px;
+  }
 }
 
 .promo__title {
   font-size: 18px;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 25px;
+    width: 80%;
+    margin: 13px auto 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 50%;
+    margin: 11px auto 0 auto;
+  }
+
+  &--video {
+    @media (min-width: $desktop) {
+      width: auto;
+    }
+  }
 }
 
 .promo__sub-title {
   display: block;
-  margin-top: 25px;
+  margin-top: 30px;
   font-size: 14px;
+
+  &--inner {
+    margin-top: 25px;
+
+    @media (min-width: $tablet) {
+      margin: 31px auto 0 auto;
+      width: 61.4%;
+    }
+  }
+
+  &--form {
+    @media (min-width: $desktop) {
+      width: 38%;
+    }
+  }
 }

@@ -5,11 +5,11 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    padding: 30px $pad-tab 35px $pad-tab;
+    padding: 0 $pad-tab 35px $pad-tab;
     align-items: center;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding: 30px 120px 35px 120px;
     align-items: center;
   }
@@ -17,13 +17,21 @@
 
 .footer__hashtag {
   @include bold();
+
+  line-height: 36px;
 }
 
 .footer__social {
-  margin: 30px 0;
+  width: 156px;
+  margin: 33px 0 40px 0;
 
   @media (min-width: $tablet) {
     width: 150px;
+    margin: 39px 10px 40px 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 3px 10px 11px 0;
   }
 }
 
@@ -36,4 +44,12 @@
 
 .footer__img {
   margin-left: 10px;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

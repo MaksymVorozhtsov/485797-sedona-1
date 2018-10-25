@@ -11,6 +11,10 @@ $desktop: 1280px;
 $pad-mob: 25px;
 $pad-tab: 60px;
 
+@mixin font() {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
 @mixin flex() {
   display: flex;
   flex-direction: column;
@@ -40,4 +44,19 @@ $pad-tab: 60px;
 @mixin bg-blue-col-white() {
   background-color: $blue;
   color: $white;
+}
+
+@mixin button-int {
+  &:hover {
+    background-color: #669ec1;
+  }
+
+  &:focus {
+    background-color: #5596be;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &[disabled] {
+    background-color: #e5e5e5;
+  }
 }

@@ -1,24 +1,46 @@
 .header {
   position: relative;
   background-color: $white;
+  padding-bottom: 55px;
 
   @media (min-width: $tablet) {
     height: 55px;
+    padding-bottom: 0;
   }
 }
 
 .header__button {
   position: absolute;
-  top: 12px;
-  right: 8px;
-  background-color: $white;
   border: none;
+  right: 13px;
+}
+
+.header__button--open {
+  bottom: 12px;
+  background-color: $white;
 
   @media (min-width: $tablet) {
     display: none;
   }
 }
 
-.header__button svg {
+.header__button--close {
+  top: 14px;
+  background-color: $blue;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.header__button--hide {
+  display: none;
+}
+
+.header__button--open svg {
   fill: $blue;
+}
+
+.header__button--close svg {
+  fill: $white;
 }

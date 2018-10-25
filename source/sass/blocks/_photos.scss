@@ -5,7 +5,7 @@
   border-bottom: 1px solid $grey;
 
   @media (min-width: $tablet) {
-    padding: $pad-tab;
+    padding: 15px $pad-tab 5px $pad-tab;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@
 }
 
 .photos__item {
-  padding: $pad-mob;
+  padding: 20px;
   border-top: 1px solid $grey;
 
   @media (min-width: $tablet) {
@@ -46,15 +46,19 @@
 }
 
 .photos__item-textblock {
+  margin-top: 18px;
+
   @media (min-width: $tablet) {
-    padding: 14px 20px 17px 20px;
+    margin-top: 0;
+    padding: 14px 28px 17px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: $desktop) {
-    width: calc(100% - 40px);
+    padding: 14px 23px 17px 20px;
+    width: calc(100% - 43px);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -64,6 +68,7 @@
 }
 
 .photos__item-title {
+  font-size: 14px;
   margin: 0;
 }
 
@@ -77,6 +82,10 @@
   justify-content: flex-start;
   font-weight: 700;
 
+  @media (min-width: $desktop) {
+    width: 64px;
+  }
+
   svg {
     fill: #a9a9a9;
 
@@ -89,4 +98,8 @@
 .photos__item-likes-num {
   display: block;
   margin: 4px 0 0 15px;
+
+  @media (min-width: $tablet) {
+    margin: 4px 0 0 10px;
+  }
 }

@@ -4,11 +4,19 @@
   text-align: center;
   box-shadow: inset 0 -3px 5px 0 rgba(108, 150, 176, 1);
 
+  &--opened {
+    display: block;
+  }
+
   @media (min-width: $tablet) {
     display: block;
     height: 100%;
     box-shadow: none;
     padding: 0 $pad-mob 0 50px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 70px 0 93px;
   }
 }
 
@@ -31,13 +39,65 @@
 .main-nav__link {
   color: $white;
   font-size: 18px;
-  line-height: 40px;
-  font-weight: bold;
+  line-height: 42px;
+  font-weight: 700;
+  padding: 6px 0;
+
+  &:hover {
+    background-color: #669ec1;
+
+    @media (min-width: $desktop) {
+      background-color: transparent;
+      color: $blue;
+    }
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     color: $black;
     font-size: 14px;
     line-height: 26px;
+  }
+
+  &--photo {
+    @media (min-width: $tablet) {
+      margin-left: 26px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 23px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet) {
+      margin-left: 157px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 242px;
+    }
+  }
+
+  &--active {
+    @media (min-width: $tablet) {
+      color: #766357;
+    }
+  }
+
+  &--active:hover {
+    @media (min-width: $tablet) {
+      color: #766357;
+    }
+  }
+
+  &--active:focus {
+    @media (min-width: $tablet) {
+      opacity: 0.3;
+    }
   }
 }
 
