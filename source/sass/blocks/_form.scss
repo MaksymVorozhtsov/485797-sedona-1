@@ -404,3 +404,9 @@
     display: block;
   }
 }
+
+.form__span-cont {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
