@@ -51,7 +51,7 @@
     padding: 0 0 15px 0;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding: 0 0 40px 0;
   }
 
@@ -111,7 +111,7 @@
     @media (min-width: $tablet) {
       width: 22%;
       height: auto;
-      padding: 40px 45px;
+      padding: 43px 45px 40px 45px;
     }
 
     @media (min-width: $desktop) {
@@ -149,13 +149,12 @@
 
   @media (min-width: $tablet) {
     font-size: 21px;
-    line-height: 22px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop) {
     width: 50%;
     margin: 0 auto;
-    line-height: 24px;
   }
 
   &--black {

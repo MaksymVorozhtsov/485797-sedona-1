@@ -9,12 +9,18 @@
 }
 
 .hotels-search__text {
-  padding: 0 13px;
+  padding: 0 20px;
   margin-top: 18px;
   line-height: 23px;
 
   @media (min-width: $tablet) {
+    width: 400px;
     margin: 25px auto 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 400px;
+    margin: inherit auto;
   }
 
   &--bold {
