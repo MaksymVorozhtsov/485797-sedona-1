@@ -22,6 +22,21 @@
 .form__fieldset {
   padding: 15px 0 $pad-mob 0;
   border: none;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: -8px;
+    left: -17px;
+    background-color: #e5e5e5;
+  }
+
+  &--text::before {
+    top: -23px;
+  }
 
   @media (min-width: $tablet) {
     padding: 20px 0;
