@@ -52,6 +52,7 @@
 
   @media (min-width: $tablet) {
     width: auto;
+    margin-bottom: 20px;
   }
 
   &--house svg {
@@ -70,10 +71,6 @@
     @media (min-width: $tablet) {
       height: 72px;
     }
-  }
-
-  @media (min-width: $tablet) {
-    margin-bottom: 20px;
   }
 }
 
