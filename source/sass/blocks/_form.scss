@@ -3,7 +3,7 @@
   background-color: $white;
 
   @media (min-width: $tablet) {
-    padding: 0 $pad-tab;
+    padding: 20px $pad-tab 0 $pad-tab;
   }
 
   @media (min-width: $desktop) {
@@ -34,8 +34,81 @@
     background-color: #e5e5e5;
   }
 
+  &--name::before {
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &--contact::before {
+    @media (min-width: $tablet) {
+      width: 125px;
+      top: 39px;
+      left: -3px;
+    }
+  }
+
+  &--contact::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      content: "";
+      width: 122px;
+      height: 1px;
+      top: 39px;
+      right: 0px;
+      background-color: #e5e5e5;
+    }
+  }
+
+  &--impr::before {
+    @media (min-width: $tablet) {
+      width: 1px;
+      height: 292px;
+      top: 31px;
+      left: 321px;
+    }
+  }
+
+  &--attended::before {
+    @media (min-width: $tablet) {
+      width: 125px;
+      top: 39px;
+      left: -3px;
+    }
+  }
+
+  &--attended::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      content: "";
+      width: 122px;
+      height: 1px;
+      top: 39px;
+      right: 0px;
+      background-color: #e5e5e5;
+    }
+  }
+
   &--text::before {
     top: -23px;
+
+    @media (min-width: $tablet) {
+      width: 125px;
+      top: 10px;
+      left: -3px;
+    }
+  }
+
+  &--text::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      content: "";
+      width: 122px;
+      height: 1px;
+      top: 10px;
+      right: 0px;
+      background-color: #e5e5e5;
+    }
   }
 
   @media (min-width: $tablet) {
@@ -419,7 +492,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 32px;
     margin-bottom: 60px;
   }
 
