@@ -66,7 +66,7 @@
     margin-right: 70px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     width: 537px;
   }
 
@@ -115,17 +115,34 @@
 }
 
 .video__replay {
+  opacity: 0.5;
+
   @media (min-width: $tablet) {
+    opacity: 1;
     position: absolute;
     top: -75px;
     right: 15px;
   }
+
+  &:hover {
+    opacity: 1;
+
+    @media (min-width: $tablet) {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .video__subtitles {
+  opacity: 0.5;
   margin-left: 105px;
 
   @media (min-width: $tablet) {
+    opacity: 1;
     position: absolute;
     top: -75px;
     right: -490px;
@@ -134,10 +151,25 @@
   @media (min-width: $desktop) {
     right: -641px;
   }
+
+  &:hover {
+    opacity: 1;
+
+    @media (min-width: $tablet) {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .video__fullscreen {
+  opacity: 0.5;
+
   @media (min-width: $tablet) {
+    opacity: 1;
     position: absolute;
     top: -75px;
     right: -540px;
@@ -145,5 +177,17 @@
 
   @media (min-width: $desktop) {
     right: -692px;
+  }
+
+  &:hover {
+    opacity: 1;
+
+    @media (min-width: $tablet) {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
