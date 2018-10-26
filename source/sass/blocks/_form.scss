@@ -308,13 +308,26 @@
 }
 
 .form__input {
-  width: calc(100% - 44px);
+  width: calc(100% - 52px);
   background-color: #f2f2f2;
   padding: 22px;
-  border: none;
+  border: 4px solid #f2f2f2;
+  height: 8px;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $white;
+  }
 
   &--txt {
     @include font();
+
+    height: auto;
   }
 
   &::placeholder {
