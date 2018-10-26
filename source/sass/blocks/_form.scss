@@ -252,6 +252,7 @@
 
     @media (min-width: $desktop) {
       margin-bottom: 0;
+      justify-content: flex-start;
     }
   }
 
@@ -263,11 +264,25 @@
 
     @media (min-width: $desktop) {
       top: 21px;
+      right: 80px;
+    }
+  }
+
+  &--phone::after {
+    @media (min-width: $desktop) {
+      right: 60px;
+    }
+  }
+
+  &--phone .form__label {
+    @media (min-width: $desktop) {
+      margin-right: 15px;
     }
   }
 
   &--email {
     @media (min-width: $desktop) {
+      width: 50%;
       margin-bottom: 0;
     }
   }
@@ -338,6 +353,13 @@
 
   &.error {
     border-color: #ff0000;
+  }
+
+  &--phone,
+  &--mail {
+    @media (min-width: $desktop) {
+      width: 265px;
+    }
   }
 }
 
