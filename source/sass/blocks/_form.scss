@@ -335,6 +335,10 @@
     font-weight: 700;
     font-size: 18px;
   }
+
+  &.error {
+    border-color: #ff0000;
+  }
 }
 
 .form__input-wrap label {
