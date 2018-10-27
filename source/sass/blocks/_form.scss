@@ -3,7 +3,7 @@
   background-color: $white;
 
   @media (min-width: $tablet) {
-    padding: 0 $pad-tab;
+    padding: 20px $pad-tab 0 $pad-tab;
   }
 
   @media (min-width: $desktop) {
@@ -22,6 +22,137 @@
 .form__fieldset {
   padding: 15px 0 $pad-mob 0;
   border: none;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: -8px;
+    left: -17px;
+    background-color: #e5e5e5;
+  }
+
+  &--name::before {
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &--contact::before {
+    @media (min-width: $tablet) {
+      width: 125px;
+      top: 39px;
+      left: -3px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 280px;
+      top: 34px;
+      left: -3px;
+    }
+  }
+
+  &--contact::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      content: "";
+      width: 122px;
+      height: 1px;
+      top: 39px;
+      right: 0;
+      background-color: #e5e5e5;
+    }
+
+    @media (min-width: $desktop) {
+      width: 280px;
+      top: 34px;
+      right: 0;
+    }
+  }
+
+  &--impr::before {
+    @media (min-width: $tablet) {
+      width: 1px;
+      height: 292px;
+      top: 31px;
+      left: 321px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 1px;
+      height: 292px;
+      top: 25px;
+      left: 481px;
+    }
+  }
+
+  &--attended::before {
+    @media (min-width: $tablet) {
+      width: 125px;
+      top: 39px;
+      left: -3px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 280px;
+      top: 54px;
+      left: -3px;
+    }
+  }
+
+  &--attended::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      content: "";
+      width: 122px;
+      height: 1px;
+      top: 39px;
+      right: 0;
+      background-color: #e5e5e5;
+    }
+
+    @media (min-width: $desktop) {
+      width: 280px;
+      top: 54px;
+      right: 0;
+    }
+  }
+
+  &--text::before {
+    top: -23px;
+
+    @media (min-width: $tablet) {
+      width: 125px;
+      top: 10px;
+      left: -3px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 280px;
+      top: 9px;
+      right: 0;
+    }
+  }
+
+  &--text::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      content: "";
+      width: 122px;
+      height: 1px;
+      top: 10px;
+      right: 0;
+      background-color: #e5e5e5;
+    }
+
+    @media (min-width: $desktop) {
+      width: 280px;
+      top: 9px;
+      right: 0;
+    }
+  }
 
   @media (min-width: $tablet) {
     padding: 20px 0;
@@ -252,6 +383,7 @@
 
     @media (min-width: $desktop) {
       margin-bottom: 0;
+      justify-content: flex-start;
     }
   }
 
@@ -263,11 +395,25 @@
 
     @media (min-width: $desktop) {
       top: 21px;
+      right: 80px;
+    }
+  }
+
+  &--phone::after {
+    @media (min-width: $desktop) {
+      right: 60px;
+    }
+  }
+
+  &--phone .form__label {
+    @media (min-width: $desktop) {
+      margin-right: 15px;
     }
   }
 
   &--email {
     @media (min-width: $desktop) {
+      width: 50%;
       margin-bottom: 0;
     }
   }
@@ -308,19 +454,43 @@
 }
 
 .form__input {
-  width: calc(100% - 44px);
+  width: calc(100% - 52px);
   background-color: #f2f2f2;
   padding: 22px;
-  border: none;
+  border: 4px solid #f2f2f2;
+  height: 8px;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $white;
+  }
 
   &--txt {
     @include font();
+
+    height: auto;
   }
 
   &::placeholder {
     color: $black;
     font-weight: 700;
     font-size: 18px;
+  }
+
+  &.error {
+    border-color: #ff0000;
+  }
+
+  &--phone,
+  &--mail {
+    @media (min-width: $desktop) {
+      width: 265px;
+    }
   }
 }
 
@@ -365,7 +535,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 32px;
     margin-bottom: 60px;
   }
 
@@ -402,5 +572,11 @@
 
   @media (min-width: $tablet) {
     display: block;
+  }
+}
+
+.form__span-cont {
+  @media (min-width: $desktop) {
+    display: none;
   }
 }

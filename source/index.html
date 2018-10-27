@@ -26,7 +26,7 @@
             <a href="form.html" class="main-nav__link main-nav__link--form">Форма отзыва</a>
           </li>
           <li class="main-nav__item main-nav__item--last">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link main-nav__link--htmlac">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link main-nav__link--htmlac" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -76,7 +76,7 @@
           </picture>
         </div>
         <ul class="reasons__list features">
-          <li class=" features__item features__item--house">
+          <li class="features__item features__item--house">
             <div class="features__item-img features__item-img--house">
               <svg xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="38px" height="36px" viewBox="0 0 74.695 72.346" enable-background="new 0 0 74.695 72.346" xml:space="preserve">
                 <g>
@@ -163,13 +163,11 @@
       <section class="hotels-search">
         <h2 class="hotels-search__title visually-hidden">Поиск гостиницы в Седоне</h2>
         <span class="hotels-search__text hotels-search__text--bold">Заинтересовались?</span>
-        <p class="hotels-search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="form.html" class="hotel-search__link">Найти гостиницу</a>
-        <picture>
-          <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-          <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта Седоны" class="hotels-search__img">
-        </picture>
+        <p class="hotels-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a href="search.html" class="hotel-search__link">Найти гостиницу</a>
+        <div class="hotels-search__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704587.3191292486!2d-112.15379547227303!3d34.88014439011684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2spl!4v1540493359985" style="border:0" allowfullscreen></iframe>
+        </div>
       </section>
     </main>
     <footer class="footer footer--main">
@@ -213,6 +211,7 @@
       </span>
     </footer>
   </div>
+  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

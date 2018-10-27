@@ -6,11 +6,11 @@
     5px 0 10px rgba(0, 0, 0, 0.1),
     -5px 0 10px rgba(0, 0, 0, 0.1);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 768px;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: $desktop) {
     width: 1200px;
   }
 }

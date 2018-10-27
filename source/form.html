@@ -26,7 +26,7 @@
             <a class="main-nav__link main-nav__link--active main-nav__link--form">Форма отзыва</a>
           </li>
           <li class="main-nav__item main-nav__item--last">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link main-nav__link--htmlac">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link main-nav__link--htmlac" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -58,7 +58,7 @@
     <main class="main">
       <section class="hero hero--inner">
         <h2 class="hero__title visually-hidden">SEDONA Feedback Hero</h2>
-        <img src="img/text-sedona.svg" width="230" height="auto" alt="Sedona slogan" class="hero__img hero__img-just-name">
+        <img src="img/text-sedona.svg" width="230" alt="Sedona slogan" class="hero__img hero__img-just-name">
       </section>
       <section class="promo promo--inner promo--form">
         <h2 class="promo__title">Оставьте свой отзыв</h2>
@@ -71,11 +71,11 @@
             <legend class="form__legend">Представьтесь:</legend>
             <div class="form__input-wrap">
               <label for="first-name" class="form__label">Имя*:</label>
-              <input type="text" placeholder="Петр" id="first-name" class="form__input form__input--text">
+              <input type="text" placeholder="Петр" id="first-name" class="form__input form__input--text" required>
             </div>
             <div class="form__input-wrap">
               <label for="last-name" class="form__label">Фамилия*:</label>
-              <input type="text" placeholder="Иванов" id="last-name" class="form__input form__input--text">
+              <input type="text" placeholder="Иванов" id="last-name" class="form__input form__input--text" required>
             </div>
             <div class="form__input-wrap">
               <label for="fathers-name" class="form__label">Отчество:</label>
@@ -86,7 +86,7 @@
             <legend class="form__legend">Контактная информация:</legend>
             <div class="form__contacts">
               <div class="form__input-wrap form__input-wrap--block form__input-wrap--phone">
-                <label for="phone" class="form__label">Контактный телефон*:</label>
+                <label for="phone" class="form__label"><span class="form__span-cont">Контактный </span>телефон*:</label>
                 <input type="tel" placeholder="Введите телефон" id="phone" class="form__input form__input--phone" required>
               </div>
               <div class="form__input-wrap form__input-wrap--block form__input-wrap--email">
@@ -176,6 +176,18 @@
         </a>
       </span>
     </footer>
+    <div class="modal modal--success modal--closed">
+      <h3 class="modal__title">Ваш отзыв отправлен!</h3>
+      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="modal__button-wrap">
+        <button class="modal__button">Закрыть окно</button>
+      </div>
+    </div>
+    <div class="modal modal--error modal--closed">
+      <h3 class="modal__title">Что-то пошло не так!</h3>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button">Ок</button>
+    </div>
   </div>
   <script src="js/script.js"></script>
 </body>

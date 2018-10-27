@@ -12,7 +12,7 @@
 
 <body>
   <svg style="display:none">
-    <symbol viewBox="0 0 22 20" id="icon__like" x="0px" y="0px">
+    <symbol viewBox="0 0 22 20" id="icon__like">
       <g>
         <g transform="translate(-295.000000, -464.000000)">
           <g transform="translate(295.000000, 464.000000)">
@@ -38,7 +38,7 @@
             <a href="form.html" class="main-nav__link main-nav__link--form">Форма отзыва</a>
           </li>
           <li class="main-nav__item main-nav__item--last">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link main-nav__link--htmlac">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link main-nav__link--htmlac" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -70,7 +70,7 @@
     <main class="main">
       <section class="hero hero--inner">
         <h2 class="hero__title visually-hidden">SEDONA Gallery Page Hero</h2>
-        <img src="img/text-sedona.svg" width="230" height="auto" alt="Sedona slogan" class="hero__img hero__img-just-name">
+        <img src="img/text-sedona.svg" width="230" alt="Sedona slogan" class="hero__img hero__img-just-name">
       </section>
       <section class="promo promo--inner">
         <h2 class="promo__title">Фото и видео</h2>
@@ -78,11 +78,13 @@
       </section>
       <section class="photos">
         <div class="photos__item photos__item--first">
-          <picture>
-            <source media="(min-width: 1280px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-            <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Sedona Photo" class="photos__item-img">
-          </picture>
+          <a href="img/photo-sunset-desktop@2x.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Sedona Photo" class="photos__item-img">
+            </picture>
+          </a>
           <div class="photos__item-textblock">
             <div class="photos__item-texts">
               <h3 class="photos__item-title">неродные просторы</h3>
@@ -97,11 +99,13 @@
           </div>
         </div>
         <div class="photos__item">
-          <picture>
-            <source media="(min-width: 1280px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-            <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Sedona Photo" class="photos__item-img">
-          </picture>
+          <a href="img/photo-cactus-desktop@2x.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Sedona Photo" class="photos__item-img">
+            </picture>
+          </a>
           <div class="photos__item-textblock">
             <div class="photos__item-texts">
               <h3 class="photos__item-title">Местная растительность</h3>
@@ -116,11 +120,13 @@
           </div>
         </div>
         <div class="photos__item">
-          <picture>
-            <source media="(min-width: 1280px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-            <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Sedona Photo" class="photos__item-img">
-          </picture>
+          <a href="img/photo-roads-desktop@2x.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+              <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Sedona Photo" class="photos__item-img">
+            </picture>
+          </a>
           <div class="photos__item-textblock">
             <div class="photos__item-texts">
               <h3 class="photos__item-title">Дорога на север</h3>
@@ -135,11 +141,13 @@
           </div>
         </div>
         <div class="photos__item">
-          <picture>
-            <source media="(min-width: 1280px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-            <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Sedona Photo" class="photos__item-img">
-          </picture>
+          <a href="img/photo-bridge-desktop@2x.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Sedona Photo" class="photos__item-img">
+            </picture>
+          </a>
           <div class="photos__item-textblock">
             <div class="photos__item-texts">
               <h3 class="photos__item-title">Мост дьявола</h3>
@@ -226,6 +234,7 @@
       </span>
     </footer>
   </div>
+  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

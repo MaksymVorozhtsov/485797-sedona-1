@@ -9,6 +9,10 @@
   @media (min-width: $tablet) {
     padding: 60px 0;
   }
+
+  @media (min-width: $desktop) {
+    padding: 60px 0 80px 0;
+  }
 }
 
 .features__item {
@@ -48,6 +52,7 @@
 
   @media (min-width: $tablet) {
     width: auto;
+    margin-bottom: 20px;
   }
 
   &--house svg {
@@ -66,10 +71,6 @@
     @media (min-width: $tablet) {
       height: 72px;
     }
-  }
-
-  @media (min-width: $tablet) {
-    margin-bottom: 20px;
   }
 }
 
@@ -91,6 +92,10 @@
     width: 165px;
     margin-left: 0;
   }
+
+  @media (min-width: $desktop) {
+    width: 290px;
+  }
 }
 
 .features__item-title,
@@ -105,5 +110,9 @@
   @media (min-width: $tablet) {
     font-size: 22px;
     margin: 5px 0 25px 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 5px 0 22px 0;
   }
 }

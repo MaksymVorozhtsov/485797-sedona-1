@@ -10,11 +10,17 @@
 
 .hotels-search__text {
   padding: 0 20px;
-  margin-top: 22px;
+  margin-top: 18px;
   line-height: 23px;
 
   @media (min-width: $tablet) {
+    width: 400px;
     margin: 25px auto 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 400px;
+    margin: inherit auto;
   }
 
   &--bold {
@@ -46,5 +52,42 @@
     width: 457px;
     margin-top: 48px;
     margin-bottom: 67px;
+  }
+}
+
+.hotels-search__map {
+  background-image: url("../img/img/bg-map-mobile@1x.jpg");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/img/bg-map-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/img/bg-map-desktop@2x.jpg");
+    }
+  }
+
+  & iframe {
+    width: $mobile;
+    height: 350px;
+
+    @media (min-width: $tablet) {
+      width: $tablet;
+    }
+
+    @media (min-width: $desktop) {
+      width: 1200px;
+    }
   }
 }
