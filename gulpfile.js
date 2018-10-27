@@ -8,6 +8,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
+var del = require("del");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -16,10 +17,9 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -36,4 +36,21 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("copy", function () {
+  return gulp.src([
+  "source/fonts/**/*.{woff,woff2}",
+  "source/img/**",
+  "source/js/**",
+  "source/*.html"
+  ], {
+  base: "source"
+  })
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("clean", function () {
+  return del("build");
+});
+
+gulp.task("build", gulp.series("clean", "copy", "css"));
+gulp.task("start", gulp.series("build", "server"));
