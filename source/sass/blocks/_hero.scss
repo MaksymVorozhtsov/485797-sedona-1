@@ -65,6 +65,17 @@
   }
 }
 
+.hero__img {
+  @media (min-width: $tablet) {
+    width: 450px;
+    height: 355px;
+  }
+
+  @media (min-width: $desktop) {
+    height: auto;
+  }
+}
+
 .hero__img-just-name {
   @media (min-width: $tablet) {
     width: 450px;
