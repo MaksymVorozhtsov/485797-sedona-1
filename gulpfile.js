@@ -56,7 +56,7 @@ gulp.task("clean", function () {
 gulp.task("refresh", function (done) {
   server.reload();
   done();
- });
+});
 
 gulp.task("build", gulp.series("clean", "copy", "css"));
 gulp.task("start", gulp.series("build", "server"));
