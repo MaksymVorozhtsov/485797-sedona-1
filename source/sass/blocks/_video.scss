@@ -69,21 +69,22 @@
   @media (min-width: $desktop) {
     width: 537px;
   }
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: -2px;
-    left: 35px;
-    background-color: $white;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    cursor: pointer;
+.video__pin {
+  position: absolute;
+  top: -2px;
+  left: 35px;
+  background-color: $white;
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 
-    @media (min-width: $tablet) {
-      left: 110px;
-    }
+  @media (min-width: $tablet) {
+    left: 110px;
   }
 }
 
@@ -103,6 +104,13 @@
     height: 1px;
     width: auto;
   }
+}
+
+.video__btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
 
   & svg {
     fill: #333333;
