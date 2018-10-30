@@ -10,17 +10,16 @@
 
 .hotels-search__text {
   padding: 0 20px;
-  margin-top: 18px;
+  margin-top: 20px;
   line-height: 23px;
 
   @media (min-width: $tablet) {
-    width: 400px;
-    margin: 25px auto 0 auto;
+    width: 450px;
+    margin: 30px auto 0 auto;
   }
 
   @media (min-width: $desktop) {
-    width: 400px;
-    margin: inherit auto;
+    margin: 28px auto 0 auto;
   }
 
   &--bold {
@@ -29,6 +28,12 @@
     @media (min-width: $tablet) {
       font-size: 30px;
     }
+  }
+}
+
+.hotels-search__nl-text {
+  @media (min-width: $tablet) {
+    display: block;
   }
 }
 
