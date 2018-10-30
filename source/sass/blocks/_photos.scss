@@ -5,7 +5,7 @@
   border-bottom: 1px solid $grey;
 
   @media (min-width: $tablet) {
-    padding: 15px $pad-tab 5px $pad-tab;
+    padding: 41px $pad-tab 5px $pad-tab;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -42,6 +42,13 @@
     @media (min-width: $desktop) {
       height: 400px;
     }
+
+    & .photos__item-textblock {
+      @media (min-width: $tablet) {
+        padding-right: 21px;
+        justify-content: space-between;
+      }
+    }
   }
 }
 
@@ -50,9 +57,9 @@
 
   @media (min-width: $tablet) {
     margin-top: 0;
-    padding: 14px 28px 17px 20px;
+    padding: 15px 28px 17px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -67,6 +74,18 @@
   }
 }
 
+.photos__item-texts {
+  @media (min-width: $tablet) {
+    width: 178px;
+    margin-right: 41px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 180px;
+    margin-right: 115px;
+  }
+}
+
 .photos__item-title {
   font-size: 14px;
   margin: 0;
@@ -74,6 +93,7 @@
 
 .photos__item-author {
   text-transform: none;
+  margin: 0;
 }
 
 .photos__item-likes {
@@ -93,6 +113,14 @@
       fill: $white;
     }
   }
+}
+
+.photos__item-like-btn {
+  border: none;
+  padding: 0;
+  margin-top: 4px;
+  background-color: transparent;
+  outline: none;
 }
 
 .photos__item-likes-num {
