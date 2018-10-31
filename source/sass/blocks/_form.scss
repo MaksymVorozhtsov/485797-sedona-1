@@ -554,6 +554,7 @@
 
     height: auto;
     padding: 18px 22px 22px 17px;
+    resize: vertical;
 
     @media (min-width: $tablet) {
       width: 600px;
